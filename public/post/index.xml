@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Code and Bugs</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on Code and Bugs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 28 Mar 2015 14:05:38 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Randomness</title>
+      <link>http://localhost:1313/post/randomness/</link>
+      <pubDate>Sat, 28 Mar 2015 14:05:38 +0100</pubDate>
+      
+      <guid>http://localhost:1313/post/randomness/</guid>
+      <description>
+
+&lt;p&gt;What makes somethings random? Which of the following sequences is more random?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;O X O X X O X X O X O X X O X O O X O X O
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;X X X O O X O O O X X X X O O O X X X X X
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Most of us would probably say the first sequence looks more random than the
+second. This is because we as human beings are notoriously bad at judging
+randomness, which is the source of many fallacies and biases (such as the
+gamers fallacy).&lt;/p&gt;
+
+&lt;p&gt;I &amp;lsquo;invented&amp;rsquo; the first sequence to make it appear random. The second one was
+obtained by flipping a real 2 Euro coin and writing down the results.&lt;/p&gt;
+
+&lt;p&gt;Why does the first sequence look more random? Because we don&amp;rsquo;t trust long
+sequences of the same element. For example consider the final 5 Xs in the
+second sequence. If I were to flip the coin again how much would you bet on it
+being another X (tails) or O (heads). Our intuition tells us that O &amp;lsquo;is due&amp;rsquo;
+(a.k.a. the gamer&amp;rsquo;s fallacy). But the truth is that the coin has no memory and
+both results are equally likely &lt;em&gt;no matter what has happened before&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you were to flip a coin 10 times it is not unlikely for you to get a very
+uneven result (e.g. 7 heads and 3 tails) even though the probability of each on
+is 50%. But if you flip a coin 10.000.000 times then it is almost impossible
+that you&amp;rsquo;d get 7.000.000 heads and 3.000.000 tails. You would get around
+5.000.000 each. This is called the law of big numbers. Things tend to even out
+in the long run. You will have very long runs of only heads but then you will
+also have long runs of only tails, and in the end they even out (more or less).&lt;/p&gt;
+
+&lt;p&gt;This is the reason why statistically speaking small samples are unreliable. It
+is more likely to get extreme results!&lt;/p&gt;
+
+&lt;p&gt;Imagine a country where people like to eat 10 types of candy. Each has a
+different flavour (e.g. chocolate, strawberry, &amp;hellip;). And imagine the preference
+for a certain flavour was evenly distributed across the whole country. 10% of
+people love chocolate, 10% strawberry etc. You are the representative of the
+candy-manufacturing company and you want to know if production should favour
+one flavour over the other. Therefore you want to conduct a survey. You choose
+the smallest of samples: 1 person. You ask just one person. This person tells
+you he loves pineapple flavoured candy. You deduce from your data that 100% of
+people eat pineapple candy. Now imagine you choose a bigger sample of 10
+people. Do you think it likely that there will be exactly one person per
+flavour leading to the correct 10% each flavour result? It is unlikely that
+this will happen, therefore you will still get results that don&amp;rsquo;t match the
+reality of what people like.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-to-tell-if-something-is-random:e18af471e9b6c7279cebc139fb767a6e&#34;&gt;How to tell if something is random?&lt;/h2&gt;
+
+&lt;p&gt;Short answer: You can&amp;rsquo;t. At least not with certainty. Why is that? Because in a
+random sequence every possible outcome is possible, even the ones that
+intuitively don&amp;rsquo;t look random (as seen in the article at the beginning). Thus
+assuming someone gives you the sequece 11111111111111111 and asks you if it is
+random. You cannot tell. It does not look random, but possibly it came out of a
+true random number generator, or someone flipping a coin.&lt;/p&gt;
+
+&lt;p&gt;What you can do is perform some mathematical tests to see if the sequence you
+got looks random. But it is both possible to generate a sequence that looks
+random but isn&amp;rsquo;t (you just need to know the rules used for checking) and it is
+possible to get a random sequence that does not pass the tests and does not
+look random.&lt;/p&gt;
+
+&lt;p&gt;The only thing you can do is choose your random number generator properly and
+trust it.&lt;/p&gt;
+
+&lt;h2 id=&#34;why-does-it-matter:e18af471e9b6c7279cebc139fb767a6e&#34;&gt;Why does it matter?&lt;/h2&gt;
+
+&lt;p&gt;Randomness is hugely important for computer cryptography. Very often secret
+keys are generated using a random number generator. If the generator is bad,
+the key will be bad and can potentially be guesses/calculated. (see How I Met
+Your Girlfriend)&lt;/p&gt;
+
+&lt;h2 id=&#34;prng-pseudo-random-number-generator:e18af471e9b6c7279cebc139fb767a6e&#34;&gt;PRNG (Pseudo random number generator)&lt;/h2&gt;
+
+&lt;p&gt;blah blah&lt;/p&gt;
+
+&lt;h2 id=&#34;true-random-generators:e18af471e9b6c7279cebc139fb767a6e&#34;&gt;True random generators&lt;/h2&gt;
+
+&lt;p&gt;asdf&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
