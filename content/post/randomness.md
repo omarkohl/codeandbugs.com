@@ -83,7 +83,75 @@ Your Girlfriend)
 
 ## PRNG (Pseudo random number generator)
 
-blah blah
+A PRNG generates *random* numbers in some arithmetic (mathematical) way and is
+repeatable. One basic example is the *Middle square method* that was described
+in the middle ages and re-invented by John von Neumann.
+
+You take some number (we call it the *seed*) and multiply it by itself. We take
+the middle digits of the result as the first *random* number. Then we repeat
+with this new *random* number.
+
+For instance if the seed is 42:
+
+    42 * 42 = 1765
+    The middle digits are 76
+    76 * 76 = 5776
+    The middle digits are 77
+    77 * 77 = 5929
+    The middle digits are 92
+    etc.
+
+This gives us following sequence of numbers: 76, 77, 92, 46, 11, 12, 14, 19, 36, 29, 84, 5, 2
+
+They look pretty random don't they?
+
+The main problem with PRNGs is that they tend to form *circles* where value repeat themselves.
+
+For instance if we take 79 as the seed:
+
+    79 * 79 = 6241
+    The middle digits are 24
+    24 * 24 = 576
+    The middle digits are 57 (0576)
+    57 * 57 = 3249
+    The middle digits are 24
+    24 * 24 = 576
+    The middle digits are 57 (0576)
+    57 * 57 = 3249
+    The middle digits are 24
+    24 * 24 = 576
+    The middle digits are 57 (0576)
+    etc.
+
+The resulting sequence is therefore: 79, 24, 57, 24, 57, 24, ...
+
+An attacker who observes the output of the PRNG will be able to predict the
+next value before it happens. These values are no longer random.
+
+Another problem with the *Middle square method* is that if the middle digits
+are 00 then all following values will be 00 as well (because 0 * 0 = 0).
+
+This is what happens with the first sequence above (the one that started with
+42 * 42 = 76). If we continue:
+
+    2 * 2 = 4
+    The middle digits are 00 (0004)
+    0 * 0 = 0
+    The middle digits are 00 (0000)
+    0 * 0 = 0
+    etc.
+
+Kevin Mitnick describes an amusing story in *The Art of Intrusion* about
+hacking a Casino machine by timing the exact moment to hit the *Play* button.
+They had found out what kind of PRNG (a LFSR - Linear Feedback Shift Register)
+the machine used and by playing once and then entering the cards displayed by
+the machine into their computer they were able to calculate how long it would
+take the machine to make the full *circle* and get back to *Royal Flush*.
+
+The big advantage of PRNGs is that they are very cheap and very fast. And being
+able to repeat the values (by supplying the same seed as the first time) is
+also an advantage when you only want to test your machine or software.
+
 
 ## True random generators
 
