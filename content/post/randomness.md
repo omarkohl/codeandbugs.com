@@ -60,7 +60,7 @@ reality of what people like.
 Short answer: You can't. At least not with certainty. Why is that? Because in a
 random sequence every possible outcome is possible, even the ones that
 intuitively don't look random (as seen in the article at the beginning). Thus
-assuming someone gives you the sequece 11111111111111111 and asks you if it is
+assume someone gives you the sequence 11111111111111111 and asks you if it is
 random. You cannot tell. It does not look random, but possibly it came out of a
 true random number generator, or someone flipping a coin. 
 
