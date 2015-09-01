@@ -2,25 +2,26 @@
 date = "2015-03-28T14:05:38+01:00"
 draft = true
 title = "Randomness"
+categories = [ "Security", "Cryptography" ]
 
 +++
 
 What makes somethings random? Which of the following sequences is more random?
 
-```
-O X O X X O X X O X O X X O X O O X O X O
-```
+<pre>
+O <b>X</b> O <b>X</b> <b>X</b> O <b>X</b> <b>X</b> O <b>X</b> O <b>X</b> <b>X</b> O <b>X</b> O O <b>X</b> O <b>X</b> O
+</pre>
 
-```
-X X X O O X O O O X X X X O O O X X X X X
-```
+<pre>
+<b>X</b> <b>X</b> <b>X</b> O O <b>X</b> O O O <b>X</b> <b>X</b> <b>X</b> <b>X</b> O O O <b>X</b> <b>X</b> <b>X</b> <b>X</b> <b>X</b>
+</pre>
 
 Most of us would probably say the first sequence looks more random than the
 second. This is because we as human beings are notoriously bad at judging
 randomness, which is the source of many fallacies and biases (such as the
 gamers fallacy).
 
-I 'invented' the first sequence to make it appear random. The second one was
+I *made up* the first sequence to make it appear random. The second one was
 obtained by flipping a real 2 Euro coin and writing down the results.
 
 Why does the first sequence look more random? Because we don't trust long
