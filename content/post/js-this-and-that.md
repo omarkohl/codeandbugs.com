@@ -15,23 +15,23 @@ functions is called.
 For instance if the function is called as a method then *this* is a reference
 to the object on whom you are calling the method.
 
-```javascript
+{{< highlight javascript >}}
 def myfunc = function() {
     this.value = 123;
 };
 var someObj = {value: 0;}
 someObj.mymethod = myfunc;
 someObj.mymethod();
-console.log(someObj.value); # value === 123
-```
+console.log(someObj.value); // value === 123
+{{< /highlight >}}
 
 If you call that function simply as a function, then *this* is a reference to
 the global context. For example:
 
-```javascript
+{{< highlight javascript >}}
 def myfunc = function() {
     this.value = 123;
 };
 myfunc()
-console.log(value); # global variable value === 123
-```
+console.log(value); // global variable value === 123
+{{< /highlight >}}
