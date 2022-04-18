@@ -6,7 +6,7 @@ title: "About"
 
 A blog about software development and everything else.
 
-Found a mistake? [Send me a pull request!](https://github.com/omarkohl/codeandbugs.com)
+Do you have feedback? Please send me a [pull request](https://github.com/omarkohl/codeandbugs.com) or an e-mail info@codeandbugs.com .
 
 ## License
 
