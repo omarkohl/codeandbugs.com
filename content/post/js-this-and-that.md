@@ -1,8 +1,7 @@
 +++
 date = "2015-09-01T11:21:05+02:00"
-draft = true
 title = "JavaScript: this and that"
-categories = [ "JavaScript" ]
+tags = [ "js" ]
 
 +++
 
