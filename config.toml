@@ -5,6 +5,9 @@ theme = 'hugo-theme-texify'
 
 enableGitInfo = true
 
+[markup.goldmark.renderer]
+unsafe = true # enable html in markdown
+
 [params]
 since = "2015"
 footnote = """
