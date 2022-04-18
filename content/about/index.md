@@ -4,7 +4,9 @@ title: "About"
 
 # About
 
-A blog about software development and everything else.
+Hey there!
+
+I'm Omar and this is my blog. I write about software development and ... everything else.
 
 Do you have feedback? Please send me a [pull request](https://github.com/omarkohl/codeandbugs.com) or an e-mail info@codeandbugs.com .
 
