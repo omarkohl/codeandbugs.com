@@ -7,6 +7,8 @@ tags = [ "security", "cryptography" ]
 
 What makes somethings random? Which of the following sequences is more random?
 
+<!--more-->
+
 <pre>
 O <b>X</b> O <b>X</b> <b>X</b> O <b>X</b> <b>X</b> O <b>X</b> O <b>X</b> <b>X</b> O <b>X</b> O O <b>X</b> O <b>X</b> O
 </pre>

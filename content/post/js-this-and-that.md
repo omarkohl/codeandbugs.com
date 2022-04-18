@@ -7,6 +7,8 @@ tags = [ "js" ]
 
 Have you ever wondered about the JavaScript *this* and *that* variables?
 
+<!--more-->
+
 ## *this*
 
 The explanation is quite simple. Every JavaScript (JS) function implicitly has
