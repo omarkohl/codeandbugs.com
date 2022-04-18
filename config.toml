@@ -2,6 +2,7 @@ baseURL = 'https://www.codeandbugs.com/'
 languageCode = 'en-us'
 title = 'CodeAndBugs'
 theme = 'hugo-theme-texify'
+description = 'A blog about software development and ... everything else'
 
 enableGitInfo = true
 
