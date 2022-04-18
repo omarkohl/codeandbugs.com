@@ -2,7 +2,6 @@ baseURL = 'https://www.codeandbugs.com/'
 languageCode = 'en-us'
 title = 'CodeAndBugs'
 theme = 'hugo-theme-texify'
-description = 'A blog about software development and ... everything else'
 
 enableGitInfo = true
 
@@ -14,3 +13,4 @@ since = "2015"
 footnote = """
 Found a mistake? Send me a <a class=link href=https://github.com/omarkohl/codeandbugs.com target=_blank rel=noopener>pull request</a> or an <a class=link href=mailto:info@codeandbugs.com>e-mail</a>.
 """
+description = 'A blog about software development and ... everything else'
