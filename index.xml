@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CodeAndBugs</title><link>https://www.codeandbugs.com/</link><description>Recent content on CodeAndBugs</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 03 Sep 2015 14:05:38 +0100</lastBuildDate><atom:link href="https://www.codeandbugs.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Randomness</title><link>https://www.codeandbugs.com/post/randomness/</link><pubDate>Thu, 03 Sep 2015 14:05:38 +0100</pubDate><guid>https://www.codeandbugs.com/post/randomness/</guid><description>&lt;p>What makes somethings random? Which of the following sequences is more random?&lt;/p>
+&lt;pre>
+O &lt;b>X&lt;/b> O &lt;b>X&lt;/b> &lt;b>X&lt;/b> O &lt;b>X&lt;/b> &lt;b>X&lt;/b> O &lt;b>X&lt;/b> O &lt;b>X&lt;/b> &lt;b>X&lt;/b> O &lt;b>X&lt;/b> O O &lt;b>X&lt;/b> O &lt;b>X&lt;/b> O
+&lt;/pre>
+&lt;pre>
+&lt;b>X&lt;/b> &lt;b>X&lt;/b> &lt;b>X&lt;/b> O O &lt;b>X&lt;/b> O O O &lt;b>X&lt;/b> &lt;b>X&lt;/b> &lt;b>X&lt;/b> &lt;b>X&lt;/b> O O O &lt;b>X&lt;/b> &lt;b>X&lt;/b> &lt;b>X&lt;/b> &lt;b>X&lt;/b> &lt;b>X&lt;/b>
+&lt;/pre>
+&lt;p>Most of us would probably say the first sequence looks more random than the
+second. This is because we as human beings are notoriously bad at judging
+randomness, which is the source of many fallacies and biases (such as the
+gambler&amp;rsquo;s fallacy).&lt;/p>
+&lt;p>I &lt;em>made up&lt;/em> the first sequence to make it appear random. The second one was
+obtained by flipping a real 2 Euro coin and writing down the results.&lt;/p>
+&lt;p>Why does the first sequence look more random? Because we don&amp;rsquo;t trust long
+sequences of the same element. For example consider the final 5 Xs in the
+second sequence. If I were to flip the coin again how much would you bet on it
+being another X (tails) or O (heads). Our intuition tells us that O &amp;lsquo;is due&amp;rsquo;
+(a.k.a. the gambler&amp;rsquo;s fallacy). But the truth is that the coin has no memory and
+both results are equally likely &lt;em>no matter what has happened before&lt;/em>.&lt;/p>
+&lt;p>If you were to flip a coin 10 times it is not unlikely for you to get a very
+uneven result (e.g. 7 heads and 3 tails) even though the probability of each one
+is 50%. But if you flip a coin 10.000.000 times then it is almost impossible
+that you&amp;rsquo;d get 7.000.000 heads and 3.000.000 tails. You would get around
+5.000.000 each. This is called the law of big numbers. Things tend to even out
+in the long run. You will have very long runs of only heads but then you will
+also have long runs of only tails, and in the end they even out (more or less).&lt;/p>
+&lt;p>This is the reason why statistically speaking small samples are unreliable. It
+is more likely to get extreme results!&lt;/p>
+&lt;p>Imagine a country where people like to eat 10 types of candy. Each has a
+different flavour (e.g. chocolate, strawberry, &amp;hellip;). And imagine the preference
+for a certain flavour was evenly distributed across the whole country. 10% of
+people love chocolate, 10% strawberry etc. You are the representative of the
+candy-manufacturing company and you want to know if production should favour
+one flavour over the other. Therefore you want to conduct a survey. You choose
+the smallest of samples: 1 person. You ask just one person. This person tells
+you he loves pineapple flavoured candy. You deduce from your data that 100% of
+people eat pineapple candy. Now imagine you choose a bigger sample of 10
+people. Do you think it likely that there will be exactly one person per
+flavour leading to the correct 10% each flavour result? It is unlikely that
+this will happen, therefore you will still get results that don&amp;rsquo;t match the
+reality of what people like.&lt;/p>
+&lt;h2 id="how-to-tell-if-something-is-random">How to tell if something is random?&lt;/h2>
+&lt;p>Short answer: You can&amp;rsquo;t. At least not with certainty. Why is that? Because in a
+random sequence every possible outcome is possible, even the ones that
+intuitively don&amp;rsquo;t look random (as seen at the beginning). Thus assume someone
+gives you the sequence 11111111111111111 and asks you if it is random. You
+cannot tell. It does not look random, but possibly it came out of a true random
+number generator, or it is the result of someone flipping a coin.&lt;/p>
+&lt;p>What you can do is perform some mathematical tests to see if the sequence you
+got looks random. But it is both possible to generate a sequence that looks
+random but isn&amp;rsquo;t (you just need to know the rules used for checking) and it is
+possible to get a random sequence that does not pass the tests and does not
+look random.&lt;/p>
+&lt;p>The only thing you can do is choose your random number generator properly and
+trust it.&lt;/p>
+&lt;h2 id="why-does-it-matter">Why does it matter?&lt;/h2>
+&lt;p>Randomness is hugely important for computer cryptography. Very often secret
+keys are generated using a random number generator. If the generator is bad,
+the key will be bad and can potentially be guesses/calculated (see link below
+&lt;em>How I Met Your Girlfriend&lt;/em>).&lt;/p>
+&lt;h2 id="prng-pseudo-random-number-generator">PRNG (Pseudo random number generator)&lt;/h2>
+&lt;p>A PRNG generates &lt;em>random&lt;/em> numbers in some arithmetic (mathematical) way and is
+repeatable. One basic example is the &lt;em>Middle square method&lt;/em> that was described
+in the middle ages and re-invented by John von Neumann.&lt;/p>
+&lt;p>We take some number (we call it the &lt;em>seed&lt;/em>) and multiply it by itself. Then we
+take the middle digits of the result as the first &lt;em>random&lt;/em> number. Repeat the
+process with this new &lt;em>random&lt;/em> number.&lt;/p>
+&lt;p>For instance if the seed is 42:&lt;/p>
+&lt;pre>&lt;code>42 * 42 = 1765
+The middle digits are 76
+76 * 76 = 5776
+The middle digits are 77
+77 * 77 = 5929
+The middle digits are 92
+etc.
+&lt;/code>&lt;/pre>
+&lt;p>This gives us following sequence of numbers: 76, 77, 92, 46, 11, 12, 14, 19, 36, 29, 84, 5, 2&lt;/p>
+&lt;p>They look pretty random don&amp;rsquo;t they?&lt;/p>
+&lt;p>The main problem with PRNGs is that they tend to form &lt;em>circles&lt;/em> where values repeat themselves.&lt;/p>
+&lt;p>For instance if we take 79 as the seed:&lt;/p>
+&lt;pre>&lt;code>79 * 79 = 6241
+The middle digits are 24
+24 * 24 = 576
+The middle digits are 57 (0576)
+57 * 57 = 3249
+The middle digits are 24
+24 * 24 = 576
+The middle digits are 57 (0576)
+57 * 57 = 3249
+The middle digits are 24
+24 * 24 = 576
+The middle digits are 57 (0576)
+etc.
+&lt;/code>&lt;/pre>
+&lt;p>The resulting sequence is therefore: 79, 24, 57, 24, 57, 24, &amp;hellip;&lt;/p>
+&lt;p>An attacker who observes the output of the PRNG will be able to predict the
+next value before it happens. These values are no longer random.&lt;/p>
+&lt;p>Another problem with the &lt;em>Middle square method&lt;/em> is that if the middle digits
+are 00 then all following values will be 00 as well (because 0 * 0 = 0).&lt;/p>
+&lt;p>This is what happens with the first sequence above (the one that started with
+42 * 42 = 76). If we continue:&lt;/p>
+&lt;pre>&lt;code>2 * 2 = 4
+The middle digits are 00 (0004)
+0 * 0 = 0
+The middle digits are 00 (0000)
+0 * 0 = 0
+etc.
+&lt;/code>&lt;/pre>
+&lt;p>Kevin Mitnick describes an amusing story in &lt;em>The Art of Intrusion&lt;/em> about
+hacking a Casino machine by timing the exact moment to hit the &lt;em>Play&lt;/em> button.
+They had found out what kind of PRNG (a LFSR - Linear Feedback Shift Register)
+the machine used and by playing once and then entering the cards displayed by
+the machine into their computer they were able to calculate how long it would
+take the machine to make the full &lt;em>circle&lt;/em> and get back to &lt;em>Royal Flush&lt;/em>.&lt;/p>
+&lt;p>The big advantage of PRNGs is that they are very cheap and very fast. And being
+able to repeat the values (by supplying the same seed as the first time) is
+also an advantage when you only want to test your machine or software.&lt;/p>
+&lt;h2 id="true-random-number-generator">True Random Number Generator&lt;/h2>
+&lt;p>A TRNG (True Random Number Generator) is a hardware device that observes some
+unpredictable physical event and records the results. For example you might
+build a machine that observes a casino roulette and outputs the results as
+random numbers. In practice this machine would be very slow and therefore
+expensive but it would work.&lt;/p>
+&lt;p>Very often microscopic events such as thermal noise, radioactive decay,
+photoelectric effect etc. are used because of their unpredictable nature.&lt;/p>
+&lt;p>It is possible to do this in software by measuring (in theory) unpredictable
+events such as the time between keystrokes, mouse movements, arrival time of
+network packets etc. In theory a very sophisticated attacker could manipulate a
+lot of these events but in practice it seems to be good enough.&lt;/p>
+&lt;h1 id="more-info">More info&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="https://en.wikipedia.org/wiki/Gambler%27s_fallacy">Gambler&amp;rsquo;s fallacy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://cs.ucsb.edu/~koc/ns/docs/slides/14-pgp/chap5-prng.pdf">Pseudorandom Bits and Sequences&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://en.wikipedia.org/wiki/Hardware_random_number_generator">Hardware random number generator&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator">Cryptographically secure pseudorandom number generator&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=fEmO7wQKCMw">DEFCON 18: How I Met Your Girlfriend - Part 1&lt;/a>,
+&lt;a href="https://www.youtube.com/watch?v=2ctRfWnisSk">Part 2&lt;/a>,
+&lt;a href="https://www.youtube.com/watch?v=vJtmZZGcR54">Part 3&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>JavaScript: this and that</title><link>https://www.codeandbugs.com/post/js-this-and-that/</link><pubDate>Tue, 01 Sep 2015 11:21:05 +0200</pubDate><guid>https://www.codeandbugs.com/post/js-this-and-that/</guid><description>&lt;p>Have you ever wondered about the JavaScript &lt;em>this&lt;/em> and &lt;em>that&lt;/em> variables?&lt;/p>
+&lt;h2 id="this">&lt;em>this&lt;/em>&lt;/h2>
+&lt;p>The explanation is quite simple. Every JavaScript (JS) function implicitly has
+a variable called &lt;em>this&lt;/em>. The value of this variable depends on the way the
+functions is called.&lt;/p>
+&lt;p>For instance if the function is called as a method then &lt;em>this&lt;/em> is a reference
+to the object on whom you are calling the method.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">myfunc&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">function&lt;/span>(&lt;span style="color:#a6e22e">newValue&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">this&lt;/span>.&lt;span style="color:#a6e22e">value&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#a6e22e">newValue&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>};
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">someObj&lt;/span> &lt;span style="color:#f92672">=&lt;/span> {&lt;span style="color:#a6e22e">value&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>};
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">someObj&lt;/span>.&lt;span style="color:#a6e22e">mymethod&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#a6e22e">myfunc&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">someObj&lt;/span>.&lt;span style="color:#a6e22e">mymethod&lt;/span>(&lt;span style="color:#ae81ff">123&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">log&lt;/span>(&lt;span style="color:#a6e22e">someObj&lt;/span>.&lt;span style="color:#a6e22e">value&lt;/span>); &lt;span style="color:#75715e">// value === 123
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>If you call that function simply as a function, then &lt;em>this&lt;/em> is a reference to
+the global context (window). For example:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">myfunc&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">function&lt;/span>(&lt;span style="color:#a6e22e">newValue&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">this&lt;/span>.&lt;span style="color:#a6e22e">value&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#a6e22e">newValue&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>};
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// value === undefined
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// window.value === undefined
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#a6e22e">myfunc&lt;/span>(&lt;span style="color:#ae81ff">123&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">log&lt;/span>(&lt;span style="color:#a6e22e">value&lt;/span>); &lt;span style="color:#75715e">// global variable value === 123
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">log&lt;/span>(window.&lt;span style="color:#a6e22e">value&lt;/span>); &lt;span style="color:#75715e">// global variable value === 123
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="that">&lt;em>that&lt;/em>&lt;/h2>
+&lt;p>Now the real problem comes when you try to define a function inside a method
+(e.g. to declare a callback that is triggered on some event).&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">buttonHandler&lt;/span> &lt;span style="color:#f92672">=&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">element&lt;/span>&lt;span style="color:#f92672">:&lt;/span> document.&lt;span style="color:#a6e22e">getElementById&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;bigButton&amp;#34;&lt;/span>),
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">counter&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">startCounting&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#66d9ef">function&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">log&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;Start counting...&amp;#34;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">this&lt;/span>.&lt;span style="color:#a6e22e">element&lt;/span>.&lt;span style="color:#a6e22e">onclick&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">function&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">log&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;Clicked on button&amp;#34;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">this&lt;/span>.&lt;span style="color:#a6e22e">counter&lt;/span> &lt;span style="color:#f92672">+=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>};
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">buttonHandler&lt;/span>.&lt;span style="color:#a6e22e">startCounting&lt;/span>();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// Click on the button 5 times
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">log&lt;/span>(&lt;span style="color:#a6e22e">buttonHandler&lt;/span>.&lt;span style="color:#a6e22e">counter&lt;/span>); &lt;span style="color:#75715e">// counter === 0, why is that?
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>The function that is triggered by &lt;em>onclick&lt;/em> events tries to increase the
+counter of the &lt;em>buttonHandler&lt;/em> but &lt;em>this&lt;/em> is no longer a reference to the
+&lt;em>buttonHandler&lt;/em> object but to the global context (window). (The global variable
+&lt;em>counter&lt;/em> does have value 5. Is that what you intended?)&lt;/p>
+&lt;p>The solution is a simple &lt;strong>convention&lt;/strong>. Create a variable &lt;em>that&lt;/em> that points
+to the outer &lt;em>this&lt;/em> and can be used inside the callback functions.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">buttonHandler&lt;/span> &lt;span style="color:#f92672">=&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">element&lt;/span>&lt;span style="color:#f92672">:&lt;/span> document.&lt;span style="color:#a6e22e">getElementById&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;bigButton&amp;#34;&lt;/span>),
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">counter&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">startCounting&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#66d9ef">function&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">log&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;Start counting...&amp;#34;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">that&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">this&lt;/span>.&lt;span style="color:#a6e22e">element&lt;/span>.&lt;span style="color:#a6e22e">onclick&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">function&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">log&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;Clicked on button&amp;#34;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">that&lt;/span>.&lt;span style="color:#a6e22e">counter&lt;/span> &lt;span style="color:#f92672">+=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>};
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">buttonHandler&lt;/span>.&lt;span style="color:#a6e22e">startCounting&lt;/span>();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// Click on the button 5 times
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">log&lt;/span>(&lt;span style="color:#a6e22e">buttonHandler&lt;/span>.&lt;span style="color:#a6e22e">counter&lt;/span>); &lt;span style="color:#75715e">// counter === 5
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="further-reads">Further reads&lt;/h2>
+&lt;ul>
+&lt;li>Douglas Crockfords excellent book &lt;em>Javascript: The Good Parts&lt;/em>&lt;/li>
+&lt;li>A very insightful &lt;a href="http://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/">blogpost by Yehuda
+Katz&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>About</title><link>https://www.codeandbugs.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.codeandbugs.com/about/</guid><description>&lt;h1 id="about">About&lt;/h1>
+&lt;p>Hey there!&lt;/p>
+&lt;p>I&amp;rsquo;m Omar and this is my blog. I write about software development and &amp;hellip; everything else.&lt;/p>
+&lt;p>Do you have feedback? Please send me a &lt;a href="https://github.com/omarkohl/codeandbugs.com">pull request&lt;/a> or an e-mail &lt;a href="mailto:info@codeandbugs.com">info@codeandbugs.com&lt;/a> .&lt;/p>
+&lt;h2 id="license">License&lt;/h2>
+&lt;p>Unless otherwise specified code samples are licensed under &lt;a href="https://choosealicense.com/licenses/mit/">MIT&lt;/a> and other content under &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">CC BY-NC-SA 4.0&lt;/a>&lt;/p>
+&lt;h2 id="credits">Credits&lt;/h2>
+&lt;ul>
+&lt;li>Powered by &lt;a href="https://gohugo.io/">Hugo&lt;/a>&lt;/li>
+&lt;li>Theme &lt;a href="https://github.com/queensferryme/hugo-theme-texify">TeXify&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

@@ -1,0 +1,101 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=author content><meta name=description content="What makes somethings random? Which of the following sequences is more random?"><link rel=icon href=https://www.codeandbugs.com/favicon.ico><meta name=keywords content=" hugo  latex  theme "><meta property="og:title" content="Randomness"><meta property="og:description" content="What makes somethings random? Which of the following sequences is more random?"><meta property="og:type" content="article"><meta property="og:url" content="https://www.codeandbugs.com/post/randomness/"><meta property="article:section" content="post"><meta property="article:published_time" content="2015-09-03T14:05:38+01:00"><meta property="article:modified_time" content="2022-04-18T12:13:03+02:00"><link rel=canonical href=https://www.codeandbugs.com/post/randomness/><meta itemprop=name content="Randomness"><meta itemprop=description content="What makes somethings random? Which of the following sequences is more random?"><meta itemprop=datePublished content="2015-09-03T14:05:38+01:00"><meta itemprop=dateModified content="2022-04-18T12:13:03+02:00"><meta itemprop=wordCount content="1340"><meta itemprop=keywords content="security,cryptography,"><link media=screen rel=stylesheet href=https://www.codeandbugs.com/css/common.css><link media=screen rel=stylesheet href=https://www.codeandbugs.com/css/content.css><title>Randomness - CodeAndBugs</title><meta name=twitter:card content="summary"><meta name=twitter:title content="Randomness"><meta name=twitter:description content="What makes somethings random? Which of the following sequences is more random?"><link rel=stylesheet href=https://www.codeandbugs.com/css/single.css></head><body><div id=wrapper><header id=header><h1><a href=https://www.codeandbugs.com/>CodeAndBugs</a></h1><nav><span class=nav-bar-item><a class=link href=/>Post</a></span>
+<span class=nav-bar-item><a class=link href=/post/>Archives</a></span>
+<span class=nav-bar-item><a class=link href=/about/>About</a></span></nav></header><main id=main class=post><h1>Randomness</h1><div><b>Keywords:</b>
+<a class=link href=https://www.codeandbugs.com/tags/security>#security</a>
+<a class=link href=https://www.codeandbugs.com/tags/cryptography>#cryptography</a></div><article class=content><p>What makes somethings random? Which of the following sequences is more random?</p><pre>
+O <b>X</b> O <b>X</b> <b>X</b> O <b>X</b> <b>X</b> O <b>X</b> O <b>X</b> <b>X</b> O <b>X</b> O O <b>X</b> O <b>X</b> O
+</pre><pre>
+<b>X</b> <b>X</b> <b>X</b> O O <b>X</b> O O O <b>X</b> <b>X</b> <b>X</b> <b>X</b> O O O <b>X</b> <b>X</b> <b>X</b> <b>X</b> <b>X</b>
+</pre><p>Most of us would probably say the first sequence looks more random than the
+second. This is because we as human beings are notoriously bad at judging
+randomness, which is the source of many fallacies and biases (such as the
+gambler&rsquo;s fallacy).</p><p>I <em>made up</em> the first sequence to make it appear random. The second one was
+obtained by flipping a real 2 Euro coin and writing down the results.</p><p>Why does the first sequence look more random? Because we don&rsquo;t trust long
+sequences of the same element. For example consider the final 5 Xs in the
+second sequence. If I were to flip the coin again how much would you bet on it
+being another X (tails) or O (heads). Our intuition tells us that O &lsquo;is due&rsquo;
+(a.k.a. the gambler&rsquo;s fallacy). But the truth is that the coin has no memory and
+both results are equally likely <em>no matter what has happened before</em>.</p><p>If you were to flip a coin 10 times it is not unlikely for you to get a very
+uneven result (e.g. 7 heads and 3 tails) even though the probability of each one
+is 50%. But if you flip a coin 10.000.000 times then it is almost impossible
+that you&rsquo;d get 7.000.000 heads and 3.000.000 tails. You would get around
+5.000.000 each. This is called the law of big numbers. Things tend to even out
+in the long run. You will have very long runs of only heads but then you will
+also have long runs of only tails, and in the end they even out (more or less).</p><p>This is the reason why statistically speaking small samples are unreliable. It
+is more likely to get extreme results!</p><p>Imagine a country where people like to eat 10 types of candy. Each has a
+different flavour (e.g. chocolate, strawberry, &mldr;). And imagine the preference
+for a certain flavour was evenly distributed across the whole country. 10% of
+people love chocolate, 10% strawberry etc. You are the representative of the
+candy-manufacturing company and you want to know if production should favour
+one flavour over the other. Therefore you want to conduct a survey. You choose
+the smallest of samples: 1 person. You ask just one person. This person tells
+you he loves pineapple flavoured candy. You deduce from your data that 100% of
+people eat pineapple candy. Now imagine you choose a bigger sample of 10
+people. Do you think it likely that there will be exactly one person per
+flavour leading to the correct 10% each flavour result? It is unlikely that
+this will happen, therefore you will still get results that don&rsquo;t match the
+reality of what people like.</p><h2 id=how-to-tell-if-something-is-random>How to tell if something is random?</h2><p>Short answer: You can&rsquo;t. At least not with certainty. Why is that? Because in a
+random sequence every possible outcome is possible, even the ones that
+intuitively don&rsquo;t look random (as seen at the beginning). Thus assume someone
+gives you the sequence 11111111111111111 and asks you if it is random. You
+cannot tell. It does not look random, but possibly it came out of a true random
+number generator, or it is the result of someone flipping a coin.</p><p>What you can do is perform some mathematical tests to see if the sequence you
+got looks random. But it is both possible to generate a sequence that looks
+random but isn&rsquo;t (you just need to know the rules used for checking) and it is
+possible to get a random sequence that does not pass the tests and does not
+look random.</p><p>The only thing you can do is choose your random number generator properly and
+trust it.</p><h2 id=why-does-it-matter>Why does it matter?</h2><p>Randomness is hugely important for computer cryptography. Very often secret
+keys are generated using a random number generator. If the generator is bad,
+the key will be bad and can potentially be guesses/calculated (see link below
+<em>How I Met Your Girlfriend</em>).</p><h2 id=prng-pseudo-random-number-generator>PRNG (Pseudo random number generator)</h2><p>A PRNG generates <em>random</em> numbers in some arithmetic (mathematical) way and is
+repeatable. One basic example is the <em>Middle square method</em> that was described
+in the middle ages and re-invented by John von Neumann.</p><p>We take some number (we call it the <em>seed</em>) and multiply it by itself. Then we
+take the middle digits of the result as the first <em>random</em> number. Repeat the
+process with this new <em>random</em> number.</p><p>For instance if the seed is 42:</p><pre><code>42 * 42 = 1765
+The middle digits are 76
+76 * 76 = 5776
+The middle digits are 77
+77 * 77 = 5929
+The middle digits are 92
+etc.
+</code></pre><p>This gives us following sequence of numbers: 76, 77, 92, 46, 11, 12, 14, 19, 36, 29, 84, 5, 2</p><p>They look pretty random don&rsquo;t they?</p><p>The main problem with PRNGs is that they tend to form <em>circles</em> where values repeat themselves.</p><p>For instance if we take 79 as the seed:</p><pre><code>79 * 79 = 6241
+The middle digits are 24
+24 * 24 = 576
+The middle digits are 57 (0576)
+57 * 57 = 3249
+The middle digits are 24
+24 * 24 = 576
+The middle digits are 57 (0576)
+57 * 57 = 3249
+The middle digits are 24
+24 * 24 = 576
+The middle digits are 57 (0576)
+etc.
+</code></pre><p>The resulting sequence is therefore: 79, 24, 57, 24, 57, 24, &mldr;</p><p>An attacker who observes the output of the PRNG will be able to predict the
+next value before it happens. These values are no longer random.</p><p>Another problem with the <em>Middle square method</em> is that if the middle digits
+are 00 then all following values will be 00 as well (because 0 * 0 = 0).</p><p>This is what happens with the first sequence above (the one that started with
+42 * 42 = 76). If we continue:</p><pre><code>2 * 2 = 4
+The middle digits are 00 (0004)
+0 * 0 = 0
+The middle digits are 00 (0000)
+0 * 0 = 0
+etc.
+</code></pre><p>Kevin Mitnick describes an amusing story in <em>The Art of Intrusion</em> about
+hacking a Casino machine by timing the exact moment to hit the <em>Play</em> button.
+They had found out what kind of PRNG (a LFSR - Linear Feedback Shift Register)
+the machine used and by playing once and then entering the cards displayed by
+the machine into their computer they were able to calculate how long it would
+take the machine to make the full <em>circle</em> and get back to <em>Royal Flush</em>.</p><p>The big advantage of PRNGs is that they are very cheap and very fast. And being
+able to repeat the values (by supplying the same seed as the first time) is
+also an advantage when you only want to test your machine or software.</p><h2 id=true-random-number-generator>True Random Number Generator</h2><p>A TRNG (True Random Number Generator) is a hardware device that observes some
+unpredictable physical event and records the results. For example you might
+build a machine that observes a casino roulette and outputs the results as
+random numbers. In practice this machine would be very slow and therefore
+expensive but it would work.</p><p>Very often microscopic events such as thermal noise, radioactive decay,
+photoelectric effect etc. are used because of their unpredictable nature.</p><p>It is possible to do this in software by measuring (in theory) unpredictable
+events such as the time between keystrokes, mouse movements, arrival time of
+network packets etc. In theory a very sophisticated attacker could manipulate a
+lot of these events but in practice it seems to be good enough.</p><h1 id=more-info>More info</h1><ul><li><a href=https://en.wikipedia.org/wiki/Gambler%27s_fallacy>Gambler&rsquo;s fallacy</a></li><li><a href=http://cs.ucsb.edu/~koc/ns/docs/slides/14-pgp/chap5-prng.pdf>Pseudorandom Bits and Sequences</a></li><li><a href=https://en.wikipedia.org/wiki/Hardware_random_number_generator>Hardware random number generator</a></li><li><a href=https://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator>Cryptographically secure pseudorandom number generator</a></li><li><a href="https://www.youtube.com/watch?v=fEmO7wQKCMw">DEFCON 18: How I Met Your Girlfriend - Part 1</a>,
+<a href="https://www.youtube.com/watch?v=2ctRfWnisSk">Part 2</a>,
+<a href="https://www.youtube.com/watch?v=vJtmZZGcR54">Part 3</a></li></ul></article><div class=paginator><a class=link href=https://www.codeandbugs.com/post/js-this-and-that/>← prev</a>
+<a></a></div><div class=comment></div></main><footer id=footer><div><span>© 2015</span> - <span>2022</span></div><div class=footnote><span>Found a mistake? Send me a <a class=link href=https://github.com/omarkohl/codeandbugs.com target=_blank rel=noopener>pull request</a> or an <a class=link href=mailto:info@codeandbugs.com>e-mail</a>.</span></div></footer></div></body></html>
