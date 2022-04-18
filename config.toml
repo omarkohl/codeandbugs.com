@@ -7,6 +7,4 @@ enableGitInfo = true
 
 [params]
 since = "2015"
-footnote = """
-<a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en target=_blank rel=noopener>CC BY-NC-SA 4.0</a>
-"""
+footnote = ""
