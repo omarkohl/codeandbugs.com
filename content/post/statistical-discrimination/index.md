@@ -187,6 +187,13 @@ Below are all the numbers summarized in a table.
 </tbody>
 </table>
 
+For any woman it is more likely she will get into the major she wants than for
+an equally qualified man and yet overall it looks like women are being
+discriminated against. The reason being that the women show a preference for
+the majors with fewer spots (i.e.  the ones where it's harder to get into). The
+real discriminatory trend against men reverses when combining the groups giving
+the impression of discrimination against women.
+
 This phenomenon is called Simpson's paradox.
 
 > Simpson's paradox is a phenomenon in probability and statistics in which a
@@ -196,13 +203,6 @@ This phenomenon is called Simpson's paradox.
 > data are unduly given causal interpretations.
 
 [Wikipedia](https://en.wikipedia.org/wiki/Simpson%27s_paradox)
-
-For any woman it is more likely she will get into the major she wants than for
-an equally qualified man and yet overall it looks like women are being
-discriminated against. The reason being that the women show a preference for
-the majors with fewer spots (i.e.  the ones where it's harder to get into). The
-real discriminatory trend against men reverses when combining the groups giving
-the impression of discrimination against women.
 
 **Note:** The point of this post is not to claim that everything that looks
 like discrimination is in fact a statistical effect or is in fact reverse
