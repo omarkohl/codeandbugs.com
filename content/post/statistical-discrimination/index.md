@@ -109,7 +109,7 @@ For major A, 15 out of 20 women get accepted (75%) and 55 out of 80 men (69%).
 ![](./simpsons_paradox_accepted-major-a.webp)
 
 Therefore, there is in fact discrimination against the men (because they are
-less likely to get into the major they applied to, even though there is no
+less likely to get into the major they applied for, even though there is no
 meaningful distinction between them and the women applying).
 
 The same is true for major B. 16 out of 20 women (80%) and 4 out of 10 men
