@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>mathematics on CodeAndBugs</title><link>https://www.codeandbugs.com/tags/mathematics/</link><description>Recent content in mathematics on CodeAndBugs</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 13 Apr 2023 09:15:50 +0200</lastBuildDate><atom:link href="https://www.codeandbugs.com/tags/mathematics/index.xml" rel="self" type="application/rss+xml"/><item><title>Statistical Discrimination</title><link>https://www.codeandbugs.com/post/statistical-discrimination/</link><pubDate>Thu, 13 Apr 2023 09:15:50 +0200</pubDate><guid>https://www.codeandbugs.com/post/statistical-discrimination/</guid><description>&lt;p>Let&amp;rsquo;s assume &lt;em>Rivermoor College&lt;/em> offers 100 open spots for next year.&lt;/p>
+&lt;p>&lt;img src="./simpsons_paradox_open-spots.webp" alt="">&lt;/p>
+&lt;p>Let&amp;rsquo;s also assume that 100 women apply &amp;hellip;&lt;/p>
+&lt;p>&lt;img src="./simpsons_paradox_female-applicants.webp" alt="">&lt;/p>
+&lt;p>&amp;hellip; as well as 100 men.&lt;/p>
+&lt;p>&lt;img src="./simpsons_paradox_male-applicants.webp" alt="">&lt;/p>
+&lt;p>The women and men are equally well qualified. There are also no differences
+concerning race, sexual orientation or some other common discrimination
+factors.&lt;/p>
+&lt;p>At the end of the application process the result is that 60 out of 100 men
+(i.e. 60%) were accepted to this college but only 40 out of 100 women (40%).
+Can we conclude that sex-based discrimination took place?&lt;/p>
+&lt;p>&lt;img src="./simpsons_paradox_accepted-applicants.webp" alt="">&lt;/p>
+&lt;p>No matter if your answer is Yes or No, please spend a few minutes thinking
+about WHY you could be right or wrong before you continue reading. How sure are
+you? Imagine reading the headline: &lt;em>Study finds &amp;ldquo;Rivermoor College&amp;rdquo; accepts 40%
+of women and 60% of men&lt;/em>. Would you feel outrage? Would you be convinced from
+the beginning that this can&amp;rsquo;t be true?&lt;/p>
+&lt;p>&lt;em>Whitespace to encourage you to think&amp;hellip;&lt;/em>&lt;/p>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;p>Below is a legend for how to read all the diagrams in this post.&lt;/p>
+&lt;p>&lt;img src="./simpsons_paradox_legend.webp" alt="">&lt;/p>
+&lt;p>Let&amp;rsquo;s look more closely what majors this college offers. Namely three different
+majors that we&amp;rsquo;ll call A, B and C. The number of spots they offer for different
+majors differs, however. 70 spots for major A, 20 spots for major B and 10
+spots for major C.&lt;/p>
+&lt;p>&lt;img src="./simpsons_paradox_open-spots-by-major.webp" alt="">&lt;/p>
+&lt;p>Now let&amp;rsquo;s look at how many women and how many men apply to each major.&lt;/p>
+&lt;p>Major A (with 70 open spots) gets 20 applications by women and 80 applications
+by men.&lt;/p>
+&lt;p>&lt;img src="./simpsons_paradox_major-a.webp" alt="">&lt;/p>
+&lt;p>Major B (with 20 open spots) gets 20 applications by women and 10 applications
+by men.&lt;/p>
+&lt;p>&lt;img src="./simpsons_paradox_major-b.webp" alt="">&lt;/p>
+&lt;p>Major C (with 10 open spots) gets 60 applications by women and 10 applications
+by men.&lt;/p>
+&lt;p>&lt;img src="./simpsons_paradox_major-c.webp" alt="">&lt;/p>
+&lt;p>As we can see, men and women differ in their preferences.&lt;/p>
+&lt;p>How are the acceptance rates within the majors?&lt;/p>
+&lt;p>For major A, 15 out of 20 women get accepted (75%) and 55 out of 80 men (69%).&lt;/p>
+&lt;p>&lt;img src="./simpsons_paradox_accepted-major-a.webp" alt="">&lt;/p>
+&lt;p>Therefore, there is in fact discrimination against the men (because they are
+less likely to get into the major they applied to, even though there is no
+meaningful distinction between them and the women applying).&lt;/p>
+&lt;p>The same is true for major B. 16 out of 20 women (80%) and 4 out of 10 men
+(40%) get accepted.&lt;/p>
+&lt;p>&lt;img src="./simpsons_paradox_accepted-major-b.webp" alt="">&lt;/p>
+&lt;p>And for major C. 9 out of 60 women (15%) and 1 out of 10 men (10%) get
+accepted.&lt;/p>
+&lt;p>&lt;img src="./simpsons_paradox_accepted-major-c.webp" alt="">&lt;/p>
+&lt;p>Below are all the numbers summarized in a table.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Major&lt;/th>
+&lt;th>Open Spots&lt;/th>
+&lt;th colspan="3">Women&lt;/th>
+&lt;th colspan="3">Men&lt;/th>
+&lt;/tr>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;th>Applicants&lt;/th>
+&lt;th>Accepted&lt;/th>
+&lt;th>% Accepted&lt;/th>
+&lt;th>Applicants&lt;/th>
+&lt;th>Accepted&lt;/th>
+&lt;th>% Accepted&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;th>A&lt;/th>
+&lt;td>70&lt;/td>
+&lt;td>20&lt;/td>
+&lt;td>15&lt;/td>
+&lt;td>75%&lt;/td>
+&lt;td>80&lt;/td>
+&lt;td>55&lt;/td>
+&lt;td>69%&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;th>B&lt;/th>
+&lt;td>20&lt;/td>
+&lt;td>20&lt;/td>
+&lt;td>16&lt;/td>
+&lt;td>80%&lt;/td>
+&lt;td>10&lt;/td>
+&lt;td>4&lt;/td>
+&lt;td>40%&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;th>C&lt;/th>
+&lt;td>10&lt;/td>
+&lt;td>50&lt;/td>
+&lt;td>9&lt;/td>
+&lt;td>15%&lt;/td>
+&lt;td>10&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>10%&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;th>Total&lt;/th>
+&lt;td>100&lt;/td>
+&lt;td>100&lt;/td>
+&lt;td>40&lt;/td>
+&lt;td>40%&lt;/td>
+&lt;td>100&lt;/td>
+&lt;td>60&lt;/td>
+&lt;td>60%&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>This phenomenon is called Simpson&amp;rsquo;s paradox.&lt;/p>
+&lt;blockquote>
+&lt;p>Simpson&amp;rsquo;s paradox is a phenomenon in probability and statistics in which a
+trend appears in several groups of data but disappears or reverses when the
+groups are combined. This result is often encountered in social-science and
+medical-science statistics, and is particularly problematic when frequency
+data are unduly given causal interpretations.&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;a href="https://en.wikipedia.org/wiki/Simpson%27s_paradox">Wikipedia&lt;/a>&lt;/p>
+&lt;p>For any woman it is more likely she will get into the major she wants than for
+an equally qualified man and yet overall it looks like women are being
+discriminated against. The reason being that the women show a preference for
+the majors with fewer spots (i.e. the ones where it&amp;rsquo;s harder to get into). The
+real discriminatory trend against men reverses when combining the groups giving
+the impression of discrimination against women.&lt;/p>
+&lt;p>&lt;strong>Note:&lt;/strong> The point of this post is not to claim that everything that looks
+like discrimination is in fact a statistical effect or is in fact reverse
+discrimination. The reason for choosing a hypothetical example with sexual
+discrimination is to make you, the reader, more likely to remember Simpson&amp;rsquo;s
+paradox. I suspect that we as humans remember things that cause strong emotions
+better, in particular if they look like injustice. The data I use is completely
+made up. &lt;em>Rivermoor College&lt;/em> does not exist as far as I know and should such a
+college exist that is a mere coincidence. I acknowledge that for simplicity
+this post assumed two genders but this is not meant to discriminate against
+anyone who does not identify with said genders.&lt;/p>
+&lt;p>&lt;strong>Note:&lt;/strong> Were you immediately convinced that the &lt;em>Rivermoor College&lt;/em> headline
+could only be a lie and are you feeling smug right now? How could a single
+headline give you enough information to come to such a strong conclusion? Did
+you in fact have multiple hypotheses in mind, one of which should have been
+&amp;ldquo;real discrimination against women is taking place&amp;rdquo;?&lt;/p>
+&lt;p>Diagrams created with Inkscape. &lt;a href="./simpsons_paradox.svg">Source file&lt;/a>.&lt;/p></description></item></channel></rss>
