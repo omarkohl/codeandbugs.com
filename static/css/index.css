@@ -2,6 +2,10 @@
     margin-top: 2rem;
 }
 
+#main > h1 {
+	padding-bottom: 1.2rem;
+}
+
 #main > .post > h2 {
     align-items: center;
     display: flex;
