@@ -97,7 +97,7 @@
 .content pre {
     background-color: #F5F5F5!important;
     border-radius: .2rem;
-    font-family: 'Latin Modern Mono', Courier, monospace;
+    font-family: 'TeX Gyre Pagella', Courier, monospace;
     margin-top: .5rem;
     overflow-x: auto;
     padding: .5rem;
