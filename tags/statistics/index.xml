@@ -1,4 +1,98 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>statistics on CodeAndBugs</title><link>https://www.codeandbugs.com/tags/statistics/</link><description>Recent content in statistics on CodeAndBugs</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 13 Apr 2023 09:15:50 +0200</lastBuildDate><atom:link href="https://www.codeandbugs.com/tags/statistics/index.xml" rel="self" type="application/rss+xml"/><item><title>Statistical Discrimination</title><link>https://www.codeandbugs.com/post/statistical-discrimination/</link><pubDate>Thu, 13 Apr 2023 09:15:50 +0200</pubDate><guid>https://www.codeandbugs.com/post/statistical-discrimination/</guid><description>&lt;p>Let&amp;rsquo;s assume &lt;em>Rivermoor College&lt;/em> offers 100 open spots for next year.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>statistics on CodeAndBugs</title><link>https://www.codeandbugs.com/tags/statistics/</link><description>Recent content in statistics on CodeAndBugs</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 05 Oct 2023 08:29:19 +0200</lastBuildDate><atom:link href="https://www.codeandbugs.com/tags/statistics/index.xml" rel="self" type="application/rss+xml"/><item><title>The mystery of the second regression line</title><link>https://www.codeandbugs.com/post/second-regression-line/</link><pubDate>Thu, 05 Oct 2023 08:29:19 +0200</pubDate><guid>https://www.codeandbugs.com/post/second-regression-line/</guid><description>&lt;p>A few days ago I was stumped by a question that came up while studying Chapter
+10 &amp;ldquo;Regression&amp;rdquo; of &lt;em>Statistics&lt;/em> by Freedman, Pisani and Purves.&lt;/p>
+&lt;p>The context is regression with two variables.&lt;/p>
+&lt;p>Notation:&lt;/p>
+&lt;ul>
+&lt;li>σ (sigma) and SD: standard deviation&lt;/li>
+&lt;li>μ (mu): mean&lt;/li>
+&lt;li>r: Pearson correlation coefficient&lt;/li>
+&lt;li>x and y: the two variables&lt;/li>
+&lt;li>$\sigma_x$: standard deviation of x&lt;/li>
+&lt;li>$\mu_x$: mean of x&lt;/li>
+&lt;/ul>
+&lt;p>Chapter 8 had introduced the concept of the &lt;em>SD line&lt;/em>, which is the line that
+crosses the point of means $(\mu_x,\mu_y)$ as well as
+$(\mu_x+\sigma_x,\mu_y+\sigma_y)$, $(\mu_x-\sigma_x,\mu_y-\sigma_y)$,
+$(\mu_x+2\cdot\sigma_x,\mu_y+2\cdot\sigma_y)$ and all other points that are an
+equal number of SDs away from the point of means.&lt;/p>
+&lt;p>For example here is a scatter diagram of ficticious height and weight data with
+the &lt;em>SD line&lt;/em>. For those less familiar with the metric system, the mean
+values 171cm and 87kg are about 5ft 7in and 192lb respectively.&lt;/p>
+&lt;p>&lt;img src="plot1.svg" alt="Scatter plot with SD line" title="Scatter plot with SD line">&lt;/p>
+&lt;p>Chapter 8 also introduces the correlation coefficient $r$ which measures how
+strong the linear association between the variables is. The closer it is to 1
+(or -1) the stronger the variables are associated. In Chapter 9 we learn that
+the correlation coefficient does not change if we interchange the variables.
+That is, weight is as correlated with height as height is with weight.&lt;/p>
+&lt;p>In our example case $r = 0.462$&lt;/p>
+&lt;p>In Chapter 10 the idea of the regression line is introduced. The regression
+line is a line that best fits the data, minimizing vertical distance to the
+points. It allows to predict for each value of x (height) the mean value of
+y (weight). The chapter also explains that the slope of the &lt;em>SD line&lt;/em> is
+$\frac{\sigma_y}{\sigma_x}$ and the slope of the regression line is
+$r\frac{\sigma_y}{\sigma_x}$&lt;/p>
+&lt;p>&lt;img src="plot2.svg" alt="Scatter plot with SD line and regression line" title="Scatter plot with
+SD line and regression line">&lt;/p>
+&lt;p>This green regression line will tell you for each value of x (height) the mean
+value of y (weight). If you divide the plot into columns, the regression line
+aproximately passes through the mean y (weight) value within each column.&lt;/p>
+&lt;p>So far so good.&lt;/p>
+&lt;p>Then, however, we learn that there is a second regression line, namely the one
+that for each value of $y$ (weight) predicts the mean value of $x$ (height). That
+might sound similar, but is not the same thing. If you divide the plot into
+rows, this second regression line will aproximately pass through the mean x
+(height) value for each row.&lt;/p>
+&lt;p>What is the slope of this second regression line? It must be
+$r\frac{\sigma_x}{\sigma_y}$ , right? We just invert the standard deviations.
+We already know that $r$ does not change when inverting the variables, so this
+is logical.&lt;/p>
+&lt;p>Let&amp;rsquo;s plot the result.&lt;/p>
+&lt;p>&lt;img src="plot3.svg" alt="Scatter plot with SD line, one correct and one incorrect regressionline" title="Scatter plot with SD line, one correct and one incorrect
+regression line">&lt;/p>
+&lt;p>It looks off. In the examples in the book both regression lines were
+symmetrical with respect to the &lt;em>SD line&lt;/em>, whereas here the first regression
+line is between the second regression line and the &lt;em>SD line&lt;/em>. Also, the second
+regression line is supposed to minimize the horizontal distance to the points.
+If you look at the bottom of the graph you can see that the line is far away
+from all points. The same is true for the top of the graph.&lt;/p>
+&lt;p>In the image below I have marked the points that are too far away from the
+second (orange) regression line with red circles. Remember that now we are
+trying to minimize the HORIZONTAL distance, which I have indicated with the
+olive-green colored arrows.&lt;/p>
+&lt;p>&lt;img src="plot3_notes.svg" alt="Scatter plot with SD line, one correct and one incorrect regression line aswell as some notes" title="Scatter plot with SD line, one correct and
+one incorrect regression line as well as some notes">&lt;/p>
+&lt;p>So, what should we change? If we use $r\frac{\sigma_y}{\sigma_x}$ we get the
+slope of the first regression line, which can&amp;rsquo;t be right. And we know $r$
+cannot change.&lt;/p>
+&lt;p>The solution to the mystery is that the second regression line calculates $x$
+with respect to $y$. So the equation is $x = slope \cdot y + intercept$. And here slope
+is precisely $r\frac{\sigma_x}{\sigma_y}$ If we re-order the terms to have $y$ on the left
+hand as is usual we get $y = \frac{x + intercept}{slope} = \frac{1}{slope}x + \frac{intercept}{slope}$&lt;/p>
+&lt;p>And $\frac{1}{slope}$ is the same as $\frac{1}{r} \cdot
+\frac{\sigma_y}{\sigma_x}$ so the only thing that changes between the slopes of
+the two regression lines is that the first one includes $r$ and the second one
+$\frac{1}{r}$&lt;/p>
+&lt;p>We can now plot that line and voilà.&lt;/p>
+&lt;p>&lt;img src="plot4.svg" alt="Scatter plot with SD line and two correct regression lines" title="Scatter plot with SD line and two correct regression lines">&lt;/p>
+&lt;p>The equation of the &lt;em>SD line&lt;/em> is: $y = 1.38\cdot x - 149$&lt;/p>
+&lt;p>The equation of the first regression line (green) is: $y = 0.638\cdot x - 22$&lt;/p>
+&lt;p>The equation of the second regression line (orange) is: $y = 2.99\cdot x - 424$&lt;/p>
+&lt;p>You can verify for yourself that if you multiply $r$ by the slope of the &lt;em>SD
+line&lt;/em> (1.38) you&amp;rsquo;ll get the slope of the first (green) regression line and if you
+multiply $\frac{1}{r}$ by the slope of the &lt;em>SD line&lt;/em> you&amp;rsquo;ll get the slope of
+the second (orange) regression line.&lt;/p>
+&lt;p>If we normalize the data (i.e. center on the mean and plot each point as the
+number of SDs distance to the mean) then the slope of the &lt;em>SD line&lt;/em> will always
+be 1, the slope of the first regression line will be $r$ and the slope of the
+second regression line $\frac{1}{r}$ (since both SDs are 1 by definition).&lt;/p>
+&lt;p>&lt;img src="plot5.svg" alt="Scatter plot with SD line and two correct regression lines(normalized)" title="Scatter plot with SD line and two correct regression
+lines (normalized)">&lt;/p>
+&lt;p>The equations in the normalized plot are as follows.&lt;/p>
+&lt;p>&lt;em>SD line&lt;/em>: $y = x$&lt;/p>
+&lt;p>First regression line (green): $y = 0.462\cdot x$&lt;/p>
+&lt;p>Second regression line (orange): $y = 2.165\cdot x$&lt;/p>
+&lt;p>You can find the Python code used to generate the data and plots on GitHub:
+&lt;a href="https://gist.github.com/omarkohl/433968aa54d75e34a5c8b5c50a259ed7">https://gist.github.com/omarkohl/433968aa54d75e34a5c8b5c50a259ed7&lt;/a>&lt;/p></description></item><item><title>Statistical Discrimination</title><link>https://www.codeandbugs.com/post/statistical-discrimination/</link><pubDate>Thu, 13 Apr 2023 09:15:50 +0200</pubDate><guid>https://www.codeandbugs.com/post/statistical-discrimination/</guid><description>&lt;p>Let&amp;rsquo;s assume &lt;em>Rivermoor College&lt;/em> offers 100 open spots for next year.&lt;/p>
 &lt;p>&lt;img src="./simpsons_paradox_open-spots.webp" alt="">&lt;/p>
 &lt;p>Let&amp;rsquo;s also assume that 100 women apply &amp;hellip;&lt;/p>
 &lt;p>&lt;img src="./simpsons_paradox_female-applicants.webp" alt="">&lt;/p>
