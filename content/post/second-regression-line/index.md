@@ -93,9 +93,10 @@ slope of the first regression line, which can't be right. And we know $r$
 cannot change.
 
 The solution to the mystery is that the second regression line calculates $x$
-with respect to $y$. So the equation is $x = slope \cdot y + intercept$. And here slope
-is precisely $r\frac{\sigma_x}{\sigma_y}$ If we re-order the terms to have $y$ on the left
-hand as is usual we get $y = \frac{x + intercept}{slope} = \frac{1}{slope}x + \frac{intercept}{slope}$
+with respect to $y$. So the equation is $x = slope \cdot y + intercept$. And
+here slope is precisely $r\frac{\sigma_x}{\sigma_y}$. If we re-order the terms
+to have $y$ on the left hand as is usual we get $y = \frac{x +
+intercept}{slope} = \frac{1}{slope}x + \frac{intercept}{slope}$
 
 And $\frac{1}{slope}$ is the same as $\frac{1}{r} \cdot
 \frac{\sigma_y}{\sigma_x}$ so the only thing that changes between the slopes of
