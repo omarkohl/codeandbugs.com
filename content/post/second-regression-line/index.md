@@ -61,10 +61,10 @@ might sound similar, but is not the same thing. If you divide the plot into
 rows, this second regression line will aproximately pass through the mean x
 (height) value for each row.
 
-What is the slope of this second regression line? It must be
-$r\frac{\sigma_x}{\sigma_y}$ , right? We just invert the standard deviations.
-We already know that $r$ does not change when inverting the variables, so this
-is logical.
+The book gives no further details on how to calculate this second regression
+line.  What is its slope? We know that $r$ never changes and that the slope
+must depend on $\sigma_x$ and $\sigma_y$ in some way. Therefore, it must be
+$r\frac{\sigma_x}{\sigma_y}$, right? We just invert the standard deviations.
 
 Let's plot the result.
 
@@ -91,6 +91,9 @@ one incorrect regression line as well as some notes")
 So, what should we change? If we use $r\frac{\sigma_y}{\sigma_x}$ we get the
 slope of the first regression line, which can't be right. And we know $r$
 cannot change.
+
+This is the mystery I was pondering. What is the slope given the above
+constraints?
 
 The solution to the mystery is that the second regression line calculates $x$
 with respect to $y$. So the equation is $x = slope \cdot y + intercept$. And
