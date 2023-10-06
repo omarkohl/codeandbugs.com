@@ -42,10 +42,10 @@ that for each value of $y$ (weight) predicts the mean value of $x$ (height). Tha
 might sound similar, but is not the same thing. If you divide the plot into
 rows, this second regression line will aproximately pass through the mean x
 (height) value for each row.&lt;/p>
-&lt;p>What is the slope of this second regression line? It must be
-$r\frac{\sigma_x}{\sigma_y}$ , right? We just invert the standard deviations.
-We already know that $r$ does not change when inverting the variables, so this
-is logical.&lt;/p>
+&lt;p>The book gives no further details on how to calculate this second regression
+line. What is its slope? We know that $r$ never changes and that the slope
+must depend on $\sigma_x$ and $\sigma_y$ in some way. Therefore, it must be
+$r\frac{\sigma_x}{\sigma_y}$, right? We just invert the standard deviations.&lt;/p>
 &lt;p>Let&amp;rsquo;s plot the result.&lt;/p>
 &lt;p>&lt;img src="plot3.svg" alt="Scatter plot with SD line, one correct and one incorrect regressionline" title="Scatter plot with SD line, one correct and one incorrect
 regression line">&lt;/p>
@@ -64,6 +64,8 @@ one incorrect regression line as well as some notes">&lt;/p>
 &lt;p>So, what should we change? If we use $r\frac{\sigma_y}{\sigma_x}$ we get the
 slope of the first regression line, which can&amp;rsquo;t be right. And we know $r$
 cannot change.&lt;/p>
+&lt;p>This is the mystery I was pondering. What is the slope given the above
+constraints?&lt;/p>
 &lt;p>The solution to the mystery is that the second regression line calculates $x$
 with respect to $y$. So the equation is $x = slope \cdot y + intercept$. And
 here slope is precisely $r\frac{\sigma_x}{\sigma_y}$. If we re-order the terms
