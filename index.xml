@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CodeAndBugs</title><link>https://www.codeandbugs.com/</link><description>Recent content on CodeAndBugs</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 05 Oct 2023 08:29:19 +0200</lastBuildDate><atom:link href="https://www.codeandbugs.com/index.xml" rel="self" type="application/rss+xml"/><item><title>The mystery of the second regression line</title><link>https://www.codeandbugs.com/post/second-regression-line/</link><pubDate>Thu, 05 Oct 2023 08:29:19 +0200</pubDate><guid>https://www.codeandbugs.com/post/second-regression-line/</guid><description>&lt;p>A few days ago I was stumped by a question that came up while studying Chapter
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CodeAndBugs</title><link>https://www.codeandbugs.com/</link><description>Recent content on CodeAndBugs</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 22 Mar 2024 20:13:34 +0100</lastBuildDate><atom:link href="https://www.codeandbugs.com/index.xml" rel="self" type="application/rss+xml"/><item><title>The mystery of the second regression line</title><link>https://www.codeandbugs.com/post/second-regression-line/</link><pubDate>Thu, 05 Oct 2023 08:29:19 +0200</pubDate><guid>https://www.codeandbugs.com/post/second-regression-line/</guid><description>&lt;p>A few days ago I was stumped by a question that came up while studying Chapter
 10 &amp;ldquo;Regression&amp;rdquo; of &lt;em>Statistics&lt;/em> by Freedman, Pisani and Purves.&lt;/p>
 &lt;p>The context is regression with two variables.&lt;/p>
 &lt;p>Notation:&lt;/p>
@@ -47,7 +47,8 @@ line. What is its slope? We know that $r$ never changes and that the slope
 must depend on $\sigma_x$ and $\sigma_y$ in some way. Therefore, it must be
 $r\frac{\sigma_x}{\sigma_y}$, right? We just invert the standard deviations.&lt;/p>
 &lt;p>Let&amp;rsquo;s plot the result.&lt;/p>
-&lt;p>&lt;img src="plot3.svg" alt="Scatter plot with SD line, one correct and one incorrect regressionline" title="Scatter plot with SD line, one correct and one incorrect
+&lt;p>&lt;img src="plot3.svg" alt="Scatter plot with SD line, one correct and one incorrect regression
+line" title="Scatter plot with SD line, one correct and one incorrect
 regression line">&lt;/p>
 &lt;p>It looks off. In the examples in the book both regression lines were
 symmetrical with respect to the &lt;em>SD line&lt;/em>, whereas here the first regression
@@ -59,7 +60,8 @@ from all points. The same is true for the top of the graph.&lt;/p>
 second (orange) regression line with red circles. Remember that now we are
 trying to minimize the HORIZONTAL distance, which I have indicated with the
 olive-green colored arrows.&lt;/p>
-&lt;p>&lt;img src="plot3_notes.svg" alt="Scatter plot with SD line, one correct and one incorrect regression line aswell as some notes" title="Scatter plot with SD line, one correct and
+&lt;p>&lt;img src="plot3_notes.svg" alt="Scatter plot with SD line, one correct and one incorrect regression line as
+well as some notes" title="Scatter plot with SD line, one correct and
 one incorrect regression line as well as some notes">&lt;/p>
 &lt;p>So, what should we change? If we use $r\frac{\sigma_y}{\sigma_x}$ we get the
 slope of the first regression line, which can&amp;rsquo;t be right. And we know $r$
@@ -88,7 +90,8 @@ the second (orange) regression line.&lt;/p>
 number of SDs distance to the mean) then the slope of the &lt;em>SD line&lt;/em> will always
 be 1, the slope of the first regression line will be $r$ and the slope of the
 second regression line $\frac{1}{r}$ (since both SDs are 1 by definition).&lt;/p>
-&lt;p>&lt;img src="plot5.svg" alt="Scatter plot with SD line and two correct regression lines(normalized)" title="Scatter plot with SD line and two correct regression
+&lt;p>&lt;img src="plot5.svg" alt="Scatter plot with SD line and two correct regression lines
+(normalized)" title="Scatter plot with SD line and two correct regression
 lines (normalized)">&lt;/p>
 &lt;p>The equations in the normalized plot are as follows.&lt;/p>
 &lt;p>&lt;em>SD line&lt;/em>: $y = x$&lt;/p>
