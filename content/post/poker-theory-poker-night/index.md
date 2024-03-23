@@ -135,10 +135,10 @@ predict for sure that job H would not make you reach all your dreams five years
 down the line. However, the expected value of picking job F is positive (i.e.
 you predict it would make you happy) whereas the expected value of picking job H
 is negative (i.e. you predict it would make you unhappy), therefore picking job
-B is the sensible thing to do.
+F is the sensible thing to do.
 
 How about in Poker, why can you say A<span class="pokerRed"
-title="hearts">♥</span> A<span class="pokerBlack" title="spades">♠</span> is a
+title="hearts">♥</span> A<span class="pokerBlack" title="spades">♠</span> are
 better pocket cards than 7<span class="pokerRed" title="hearts">♥</span> 2<span
 class="pokerBlack" title="clubs">♣</span>? Because on average the player with
 A<span class="pokerRed" title="hearts">♥</span> A<span class="pokerBlack"
@@ -178,7 +178,7 @@ suggested... right? Problem solved!
 
 Well, not really. Sooner or later one player would figure out that if they fold
 their bad hands a little more frequently they would start losing a little less
-and then other players would follow their examples and everyone would end up
+and then other players would follow their example and everyone would end up
 exactly where you started.
 
 This is why Poker has blinds. Blinds are obligatory bets placed at the beginning
@@ -237,8 +237,8 @@ Some examples:
 * If someone said they would attend but they do not, they have to buy a round of
   drinks for everyone the next time they come.
 * If someone commits to attending they have to transfer the money for the first
-  buy-in to the host of the evening. If the participants cancels after this,
-  their money gets added to the pot in small increments.
+  buy-in to the host of the evening. If the participant cancels after this they
+  get no refund and their money gets added to the pot in small increments.
 * Use social pressure / shame to make _folding_ expensive. Presumably this is
   what many groups do implicitly without ever consciously deciding on it.
 
@@ -260,7 +260,7 @@ group) more.
 
 Some alternatives to my proposal that some groups (probably) use:
 
-* Make _folding_ extremely expensive so nobody every does it. For example a
+* Make _folding_ extremely expensive so nobody ever does it. For example a
   college course that ejects students who are absent even once (unless they
   bring a doctor's note).
 * Make whathever the group is doing more attractive so that the EV of attending
