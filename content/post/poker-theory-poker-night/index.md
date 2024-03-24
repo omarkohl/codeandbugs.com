@@ -121,7 +121,7 @@ then you would win. Is there _nothing_ you can say about how things might turn
 out before seeing the community cards?
 
 Yes you can say something, this is what is known as expected value or EV for
-short. What is EV? Well it is the value you expect to gain (or lose) in a
+short. What is EV? Well it is the _value_ you _expect_ to gain (or lose) in a
 particular situation. For example let's say I offer you the following bet: I
 will flip a fair coin. If it comes up heads I will give you <span>$</span>1,000
 and if it comes up tails you have to give me <span>$</span>10. Would you play?
@@ -177,8 +177,8 @@ everyone would fold any hand except AA just to be on the safe side, since this
 is the one with the highest EV in the entire game.
 
 Even before the community cards were dealt the winner would already be clear and
-what is worse, the pot would not even contain any money because nobody had bet
-anything.
+what is worse, the pot would not even contain any money because nobody would
+have bet anything.
 
 That sounds like a truly terrible game!
 
