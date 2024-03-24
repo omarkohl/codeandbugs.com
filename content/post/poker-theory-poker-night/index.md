@@ -11,15 +11,15 @@ build:
   list: never
 ---
 
-A group of friends and I like to get together occasionally to play Poker. Yet
+A group of friends and I occasionally like to get together to play Poker. Yet
 something keeps happening that I have observed time and again with these kinds
 of group gatherings: It is hard to find a suitable date and then on top people
 cancel last minute. This is demotivating for other participants, who in turn
 also become less committed and this often leads to such groups failing.
 
-Here is one theory of why this happens and how to solve it, explained with Poker
-(this article will assume Texas Hold'em Poker, probably the most popular
-variant).
+Here is one theory of why this happens and how to solve it, explained with
+Poker. This article will assume Texas Hold'em Poker, probably the most popular
+variant.
 
 ## Aside: Poker Basics
 
@@ -88,17 +88,28 @@ the automatic winner of that hand and takes the pot. Read some more about the
 rules [here](https://www.pokerstars.com/poker/games/texas-holdem/) or
 [here](https://en.wikipedia.org/wiki/Texas_hold_'em).
 
+A few other concepts that appear in this article:
+
+* Chips: Small disks that represent money. In the image above you can see them
+  on the table close to the player in green, white, red and blue. Different
+  colors represent different amounts (e.g. green 10 cent, white 50 cent etc.).
+* Stack: The chips that are currently yours. In the image above those green,
+  white, red and blue chips are this player's stack.
+* Pot: The chips in the center of the table where all the bets by the different
+  players get added. The winner of a hand takes the pot and adds it to their
+  stack. At the very beginning of a hand the pot is usually empty.
+
 ## ... Back to the Main Article
 
-Let's assume you are at the beginning of a Poker round with just one other
-player (Victoria) and you just got dealt A<span class="pokerRed"
+Let's assume you are at the beginning of a Poker hand with just one other player
+(Victoria) and you just got dealt A<span class="pokerRed"
 title="hearts">♥</span> and A<span class="pokerBlack" title="spades">♠</span>
 whereas she got dealt 7<span class="pokerRed" title="hearts">♥</span> and 2<span
 class="pokerBlack" title="clubs">♣</span> (of course, in a real game you do not
-know what other players get dealt). No community cards have been dealt. Who of
-you is going to win at showdown? That is impossible to predict, right? Well, not
-quite. You cannot make a certain prediction, for example if the community cards
-end up being 7<span class="pokerBlack" title="spades">♠</span>, 7<span
+know what other players get dealt). No community cards have been uncovered. Who
+of you is going to win at showdown? That is impossible to predict, right? Well,
+not quite. You cannot make a certain prediction, for example if the community
+cards end up being 7<span class="pokerBlack" title="spades">♠</span>, 7<span
 class="pokerBlack" title="clubs">♣</span>, 2<span class="pokerRed"
 title="diamonds">♦</span>, 8<span class="pokerBlack" title="clubs">♣</span> and
 9<span class="pokerBlack" title="clubs">♣</span> then Victoria would win whereas
@@ -110,10 +121,10 @@ then you would win. Is there _nothing_ you can say about how things might turn
 out before seeing the community cards?
 
 Yes you can say something, this is what is known as expected value or EV for
-short. What is EV? Well it is the value you expect to gain. For example let's
-say I offer you the following bet: I will flip a fair coin. If it comes up heads
-I will give you <span>$</span>1,000 and if it comes up tails you have to give me
-<span>$</span>10. Would you play?
+short. What is EV? Well it is the value you expect to gain (or lose) in a
+particular situation. For example let's say I offer you the following bet: I
+will flip a fair coin. If it comes up heads I will give you <span>$</span>1,000
+and if it comes up tails you have to give me <span>$</span>10. Would you play?
 
 Think about it for a moment. Would you play and if yes, why? The coin is really
 fair (i.e. not a trick coin that always comes up tails).
@@ -159,15 +170,15 @@ explained later.
 So based only on your pocket cards you can already make a prediction how likely
 it is you are going to win. If you get dealt pocket cards that have a low EV,
 what is the sensible thing to do? Fold (i.e. give up) and wait for the next
-hand. So just fold anything that is not the very strongest pocket cards i.e.
-AA, AK or KK. In a table of 9 players everyone that does not have one of those
-hands would just fold. In fact, once everyone realizes this is what is going on
+hand. So just fold anything that is not the very strongest pocket cards i.e. AA,
+AK or KK. In a table of 9 players everyone that does not have one of those hands
+would just fold. In fact, once everyone realizes this is what is going on,
 everyone would fold any hand except AA just to be on the safe side, since this
 is the one with the highest EV in the entire game.
 
 Even before the community cards were dealt the winner would already be clear and
 what is worse, the pot would not even contain any money because nobody had bet
-anything!
+anything.
 
 That sounds like a truly terrible game!
 
@@ -183,38 +194,42 @@ exactly where you started.
 
 This is why Poker has blinds. Blinds are obligatory bets placed at the beginning
 of each hand blindly (without seeing their pocket cards) by two of the players.
-Which two players changes every hand.
+Which two players rotates every hand.
 
 What is the point of the blinds? It makes the two players who posted the blinds
 much more likely to play even with suboptimal pocket cards and it makes other
 players more likely to play too because they know the players who posted the
 blinds might be playing with suboptimal pocket cards so they can be beaten plus
 if other players fold easily then the pot is essentially free money. The entire
-game of Poker is only possible because of the blinds!
+game of Poker is only possible because of the blinds.
 
 Sometimes Poker is also played with additional obligatory bets that all players
 have to post at the beginning of the game called ante. This stimulates the
 game even further.
 
-Each player individually would prefer never having to post blinds or ante.
-Instead the player would prefer looking at their own pocket cards and then
-deciding to either fold or place a bet. However, this makes the game as a whole
-collapse and that is why the added incentive of blinds and antes is needed.
+Each player would prefer never having to post blinds or ante. Instead the player
+would prefer looking at their own pocket cards and then deciding to either fold
+or place a bet. However, this makes the game as a whole collapse and that is why
+the added incentive of blinds and antes is needed.
 
-Returning to Poker nights (and other similar gatherings). Let's assume everyone
-who joins generally enjoys it. At the same time, Poker night is not their
-highest priority in life. There are about 56 other things that, given the right
-circumstances, take priority over Poker night for each person. Therefore, for
-each person individually what _would be perfect_ is to know that Poker night
-takes place and that enough other people participate (because then it's more
-fun) but that they themself can decide spontaneously up to the last minute
-whether they are going to join or not. This maximizes their EV because they get
-to choose out of all the options they have available that evening the one option
-that suits them the most, which could be catching up with that other friend they
-have been wanting to meet for ages, going to the cinema with their partner,
-recharging after a long week by staying home or in fact going to Poker night.
-Those are all reasonable things people enjoy doing and it make total sense that
-they would sometimes or even always take priority over Poker night.
+## Returning to Poker nights
+
+... and other similar gatherings. Let's assume everyone who joins generally
+enjoys it. At the same time, Poker night is not their highest priority in life.
+There are about 56 other things that, given the right circumstances, take
+priority over Poker night for each person. Therefore, for each person what
+_would be perfect_ is to know that Poker night takes place and that enough other
+people participate (because then it's more fun) but that they themself can
+decide spontaneously up to the last minute whether they are going to join or
+not. This maximizes their EV because they get to choose out of all the options
+they have available that evening the one option that suits them the most, which
+could be catching up with that other friend they have been wanting to meet for
+ages, going to the cinema with their partner, recharging after a long week by
+staying home or in fact going to Poker night. The alternatives are all
+reasonable things people enjoy doing and it make total sense that they would
+sometimes or even always take priority over Poker night. Not to speak of
+emergencies and illness. Going to Poker night right after breaking your arm
+might be _possible_ but has a very negative EV.
 
 However, how does this impact the other people who want to come to Poker night?
 If I predict that everyone else might cancel last minute due to other plans then
@@ -222,7 +237,7 @@ I will proactively start making other plans because being stuck with a canceled
 event at the last minute or playing Poker with just one or two other people is
 not that much fun. If I start making other plans and canceling Poker night
 attendance this again negatively impacts the likelihood other people attending
-and so on ... it's a vicious cycle.
+and so on... it's a vicious cycle.
 
 Everyone maximizes their own EV by committing as late as possible even though
 this threatens the evening as a whole, much the same way that Poker as a game
@@ -237,28 +252,44 @@ Some examples:
 * If someone said they would attend but they do not, they have to buy a round of
   drinks for everyone the next time they come.
 * If someone commits to attending they have to transfer the money for the first
-  buy-in to the host of the evening. If the participant cancels after this they
-  get no refund and their money gets added to the pot in small increments.
-* Use social pressure / shame to make _folding_ expensive. Presumably this is
-  what many groups do implicitly without ever consciously deciding on it.
+  buy-in (or a fraction of it) to the host of the evening. If the participant
+  cancels after this, they get no refund and their money gets added to the pot
+  in small increments.
+* Use social pressure, reputation or shame to make _folding_ expensive.
+  Presumably this is what many groups do implicitly without ever consciously
+  deciding on it. If your bowling group gives Pedro the cold shoulder after he
+  failed to come for the second time, this is what is going on.
 
 Just like in Poker the negative impact should be small. There is a reason why
-blinds and ante are small amounts compared to your entire stack (all your Poker
-chips, which represent money). This means that Poker players who play in the SB
-(small blind) or BB (big blind) position still have the option of folding if
-they get really terrible cards. They are not obligated to play every hand.
-Concerning gatherings it means that if someone has got some other activity they
-really want to participate in instead of Poker night they also have that option.
-In both cases they just have to accept the small price of losing the blind.
+blinds and ante are small amounts compared to your entire stack. This means that
+the Poker players who posted the blinds still have the option of folding if they
+get really terrible cards. They are not obligated to play every hand. Concerning
+gatherings, it means that if someone has got some other activity they really want
+to participate in instead of Poker night, they also have that option. In both
+cases they just have to accept the small price of losing the blind.
 
 I think one of the main reasons why this works in the game of Poker and why I
 predict it also works in gatherings is that it creates incentives to behave in a
-certain way but much **more importantly** it creates common knowledge that those
-incentives exist, meaning everyone is able to rely much more on other people's
-behavior and they themself start behaving in ways that benefit the game (or
-group) more.
+certain way but much **more importantly** it creates **common knowledge** that
+those incentives exist, meaning everyone is able to rely much more on other
+people's behavior and due to this fact they themself start behaving in ways that
+benefit the game (or group) more. (Common knowledge means all participants know
+the rules. It also means that all participants know that all other participants
+know the rules. And it also means that all participants know that all other
+participants know that all participants know the rules. And so on.)
 
-Some alternatives to my proposal that some groups (probably) use:
+To re-iterate: The analogy this article is making is that before playing a hand
+in Poker if I had the choice I would always look at my pocket cards before
+making any bet. I would never voluntarily post blinds or ante. However, this
+makes the game not work. In social gatherings it is rational for me to delay my
+decision as long as possible without committing because then I get to maximize
+my expected value once I know how I am feeling and what options I have
+available. This, however, is detrimental to the survival of the group.
+Introducing an incentive that encourages committing and disencourages canceling
+after having committed could have the same positive effect as blinds and ante do
+in Poker, in particular by creating common knowledge about this very fact.
+
+Some alternative solutions:
 
 * Make _folding_ extremely expensive so nobody ever does it. For example a
   college course that ejects students who are absent even once (unless they
@@ -266,14 +297,16 @@ Some alternatives to my proposal that some groups (probably) use:
 * Make whathever the group is doing more attractive so that the EV of attending
   increases, thus making attendees less likely to choose another activity. For
   example, if you are organizing talks you can try to get more popular and
-  interesting speakers.
+  interesting speakers. Artificially limiting the number of available spots
+  could be another way of increasing the perceived value of the event.
 * Increase the size of the pool of potential attendees. For example assume that
   a group of 7 friends meets for lunch the last Sunday of every month.
   Experience has shown that each of them is 70% likely to attend. This means
   that on average about 5 friends attend each lunch. They would like to have at
   least 6 people. They can achieve this by inviting more people. If N is the
   number of potential participants, N * 0.7 >= 6 leads us to N >= 8.57 i.e. They
-  need to invite at least 9 people total.
+  need to invite at least 9 people total. Note that in reality of course
+  different people have different probabilities of attending.
 
 Closing thoughts:
 
@@ -284,7 +317,7 @@ Closing thoughts:
   hunt](https://www.lesswrong.com/posts/zp5AEENssb8ZDnoZR/the-schelling-choice-is-rabbit-not-stag).
   I don't _really_ know what I'm talking about!
 * Introducing (monetary) _punishments_ (an incentive can easily be understood as
-  a punishment) to social relationships can probably do a lot of damage so be
+  a punishment) to social relationships can probably do a lot of damage, so be
   careful.
 * Talking about EV when meeting friends could be perceived as cold and could
   damage relationships, so again, be careful. Not everyone likes
@@ -303,3 +336,5 @@ Closing thoughts:
   * Coin: James B. Longacre. Image by Lost Dutchman Rare Coins
   * License CC BY-SA 3.0 US Deed
   * https://commons.wikimedia.org/wiki/File:1852_gold_dollar_obverse.jpg
+* Many thanks to Catarina, Bijay, Hauke and Nawid for proof reading, criticism
+  and suggestions.
