@@ -1,5 +1,5 @@
 ---
-title: "(Draft) The Poker Theory of Poker Night"
+title: "The Poker Theory of Poker Night"
 date: 2024-03-22T20:13:34+01:00
 summary: Coordinating a group of people for a gathering (e.g. a Poker night) is
   difficult. The challenges and solution can be explained using the rules of
