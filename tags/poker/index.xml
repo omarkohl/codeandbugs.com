@@ -15,18 +15,12 @@ rule that makes folding (canceling attendance) have a bit of negative EV.&lt;/p>
 hand also refers to the specific cards that a player is holding, which can be a
 little confusing.&lt;/p>
 &lt;p>At the beginning of the hand each player gets two cards that only the player
-themself gets to see. These are the pocket cards. For example A&lt;span
-class="pokerBlack" title="clubs">♣&lt;/span> and A&lt;span
-class="pokerRed" title="diamonds">♦&lt;/span>.&lt;/p>
+themself gets to see. These are the pocket cards. For example A♣️ and A♦️.&lt;/p>
 &lt;p>Then over the course of several rounds up to a total of 5 cards are added to the
 middle of the table, face-up i.e. everyone gets to see them. These are the
-community cards. For example 9&lt;span class="pokerRed"
-title="diamonds">♦&lt;/span>, T&lt;span class="pokerBlack"
-title="spades">♠&lt;/span>, A&lt;span class="pokerBlack"
-title="spades">♠&lt;/span>, Q&lt;span class="pokerBlack"
-title="clubs">♣&lt;/span> and A&lt;span class="pokerRed"
-title="hearts">♥&lt;/span>. (&lt;strong>Note:&lt;/strong> T stands for 10 so that all ranks can be
-written using a single character: 2, 3, 4, 5, 6, 7, 8, 9, T, J, Q, K, A).&lt;/p>
+community cards. For example 9♦️, T♠️, A♠️, Q♣️ and A♥️. (&lt;strong>Note:&lt;/strong> T stands for
+10 so that all ranks can be written using a single character: 2, 3, 4, 5, 6, 7,
+8, 9, T, J, Q, K, A).&lt;/p>
 &lt;p>&lt;img src="pocket-community-cards.jpg" alt="A player holding their pocket cards and in the back the five community cards
 on the table.">&lt;/p>
 &lt;p>&lt;small>Above you see a player holding their pocket cards and in the back the
@@ -34,26 +28,16 @@ five community cards on the table.&lt;/small>&lt;/p>
 &lt;p>At the end of the hand during the &lt;em>showdown&lt;/em> each player gets to choose 5 total
 cards out of the 7 available cards (their two pockets cards plus the five
 community cards). All players share the community cards so they can be used
-multiple times. For example the player in the example above would choose A&lt;span
-class="pokerBlack" title="clubs">♣&lt;/span>, A&lt;span
-class="pokerRed" title="diamonds">♦&lt;/span>, A&lt;span
-class="pokerBlack" title="spades">♠&lt;/span>, A&lt;span
-class="pokerRed" title="hearts">♥&lt;/span> and Q&lt;span
-class="pokerBlack" title="clubs">♣&lt;/span> for a final hand
-combination of four of a kind aces and queen kicker (which is a very strong
-hand). The fact that this player used two aces and the queen from the community
-cards does NOT prevent other players from using them too.&lt;/p>
+multiple times. For example the player in the example above would choose A♣️,
+A♦️, A♠️, A♥️ and Q♣️ for a final hand combination of four of a kind aces and
+queen kicker (which is a very strong hand). The fact that this player used two
+aces and the queen from the community cards does NOT prevent other players from
+using them too.&lt;/p>
 &lt;p>The strongest hand wins and takes the money in the center of the table (the
 pot).&lt;/p>
-&lt;p>The hands are ranked from the strongest, Royal Flush (e.g. A&lt;span
-class="pokerRed" title="diamonds">♦&lt;/span>, K&lt;span class="pokerRed"
-title="diamonds">♦&lt;/span>, Q&lt;span class="pokerRed" title="diamonds">♦&lt;/span>,
-J&lt;span class="pokerRed" title="diamonds">♦&lt;/span> and T&lt;span class="pokerRed"
-title="diamonds">♦&lt;/span>), all the way to the weakest, High Card (e.g. A&lt;span
-class="pokerRed" title="hearts">♥&lt;/span>, 8&lt;span class="pokerBlack"
-title="spades">♠&lt;/span>, 5&lt;span class="pokerRed" title="diamonds">♦&lt;/span>,
-3&lt;span class="pokerBlack" title="clubs">♣&lt;/span> and 2&lt;span class="pokerBlack"
-title="clubs">♣&lt;/span>). Read more about hands rankings
+&lt;p>The hands are ranked from the strongest, Royal Flush (e.g. A♦️, K♦️, Q♦️, J♦️
+and T♦️), all the way to the weakest, High Card (e.g. A♥️, 8♠️, 5♦️, 3♣️ and
+2♣️). Read more about hands rankings
 &lt;a href="https://www.pokerstars.com/poker/learn/lesson/poker-hand-rankings/">here&lt;/a>.&lt;/p>
 &lt;p>Of course there are many details missing, in particular during the hand there
 are several rounds where players can place bets and raise the bets of other
@@ -75,23 +59,14 @@ stack. At the very beginning of a hand the pot is usually empty.&lt;/li>
 &lt;/ul>
 &lt;h2 id="-back-to-the-main-article">&amp;hellip; Back to the Main Article&lt;/h2>
 &lt;p>Let&amp;rsquo;s assume you are at the beginning of a Poker hand with just one other player
-(Victoria) and you just got dealt A&lt;span class="pokerRed"
-title="hearts">♥&lt;/span> and A&lt;span class="pokerBlack" title="spades">♠&lt;/span>
-whereas she got dealt 7&lt;span class="pokerRed" title="hearts">♥&lt;/span> and 2&lt;span
-class="pokerBlack" title="clubs">♣&lt;/span> (of course, in a real game you do not
-know what other players get dealt). No community cards have been uncovered. Who
-of you is going to win at showdown? That is impossible to predict, right? Well,
-not quite. You cannot make a certain prediction, for example if the community
-cards end up being 7&lt;span class="pokerBlack" title="spades">♠&lt;/span>, 7&lt;span
-class="pokerBlack" title="clubs">♣&lt;/span>, 2&lt;span class="pokerRed"
-title="diamonds">♦&lt;/span>, 8&lt;span class="pokerBlack" title="clubs">♣&lt;/span> and
-9&lt;span class="pokerBlack" title="clubs">♣&lt;/span> then Victoria would win whereas
-if the community cards end up being A&lt;span class="pokerRed"
-title="diamonds">♦&lt;/span>, 3&lt;span class="pokerRed" title="diamonds">♦&lt;/span>,
-5&lt;span class="pokerBlack" title="spades">♠&lt;/span>, 2&lt;span class="pokerRed"
-title="hearts">♥&lt;/span> and K&lt;span class="pokerBlack" title="spades">♠&lt;/span>
-then you would win. Is there &lt;em>nothing&lt;/em> you can say about how things might turn
-out before seeing the community cards?&lt;/p>
+(Victoria) and you just got dealt A♥️ and A♠️ whereas she got dealt 7♥️ and 2♣️
+(of course, in a real game you do not know what other players get dealt). No
+community cards have been uncovered. Who of you is going to win at showdown?
+That is impossible to predict, right? Well, not quite. You cannot make a certain
+prediction, for example if the community cards end up being 7♠️, 7♣️, 2♦️, 8♣️
+and 9♣️ then Victoria would win whereas if the community cards end up being A♦️,
+3♦️, 5♠️, 2♥️ and K♠️ then you would win. Is there &lt;em>nothing&lt;/em> you can say about
+how things might turn out before seeing the community cards?&lt;/p>
 &lt;p>Yes you can say something, this is what is known as expected value (EV). What is
 EV? Well it is the &lt;em>value&lt;/em> you &lt;em>expect&lt;/em> to gain (or lose) in a particular
 situation. For example let&amp;rsquo;s say I offer you the following bet: I will flip a
@@ -117,20 +92,10 @@ been. However, the expected value of picking job F is positive (i.e. you predict
 it would make you happy) whereas the expected value of picking job H is negative
 (i.e. you predict it would make you unhappy), therefore picking job F is the
 sensible thing to do.&lt;/p>
-&lt;p>How about in Poker, why can you say A&lt;span class="pokerRed"
-title="hearts">♥&lt;/span> A&lt;span class="pokerBlack" title="spades">♠&lt;/span> are
-better pocket cards than 7&lt;span class="pokerRed" title="hearts">♥&lt;/span> 2&lt;span
-class="pokerBlack" title="clubs">♣&lt;/span>? Because on average the player with
-A&lt;span class="pokerRed" title="hearts">♥&lt;/span> A&lt;span class="pokerBlack"
-title="spades">♠&lt;/span> will win much more often than the player with 7&lt;span
-class="pokerRed" title="hearts">♥&lt;/span> 2&lt;span class="pokerBlack"
-title="clubs">♣&lt;/span>. If you play A&lt;span class="pokerRed"
-title="hearts">♥&lt;/span> A&lt;span class="pokerBlack" title="spades">♠&lt;/span>
-against 7&lt;span class="pokerRed" title="hearts">♥&lt;/span> 2&lt;span
-class="pokerBlack" title="clubs">♣&lt;/span>, 100 times, A&lt;span class="pokerRed"
-title="hearts">♥&lt;/span> A&lt;span class="pokerBlack" title="spades">♠&lt;/span> would
-win about 87 times and 7&lt;span class="pokerRed" title="hearts">♥&lt;/span> 2&lt;span
-class="pokerBlack" title="clubs">♣&lt;/span> would win about 13 times.&lt;/p>
+&lt;p>How about in Poker, why can you say A♥️ A♠️ are better pocket cards than 7♥️
+2♣️? Because on average the player with A♥️ A♠️ will win much more often than
+the player with 7♥️ 2♣️. If you play A♥️ A♠️ against 7♥️ 2♣️, 100 times, A♥️ A♠️
+would win about 87 times and 7♥️ 2♣️ would win about 13 times.&lt;/p>
 &lt;p>Note: In the following paragraphs I&amp;rsquo;m making the assumption that there are no
 blinds in Poker to make a point. If you don&amp;rsquo;t know what blinds are, it&amp;rsquo;s
 explained later.&lt;/p>
