@@ -347,8 +347,9 @@ trying a (somewhat) controlled experiment.
 
 ## Credits
 
-* Many thanks to Anjali, Catarina, Daniel (@7secularsermons), Bijay, Hauke,
-  Nawid and Robert for proof reading, criticism and suggestions.
+* Many thanks to Anjali, Catarina, Daniel
+  ([@7secularsermons](https://sevensecularsermons.org)), Bijay, Hauke, Nawid and
+  Robert for proof reading, criticism and suggestions.
 * Image with pocket and community cards:
   * Bob de Becker
   * License CC-BY-2.0
