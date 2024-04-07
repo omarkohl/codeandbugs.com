@@ -312,6 +312,11 @@ Some alternative solutions:
   number of potential participants, $N \times 0.7 \ge 6$ leads us to $N \ge 8.57$ i.e. They
   need to invite at least 9 people total. Note that in reality of course
   different people have different probabilities of attending.
+* One person commits to the event always taking place no matter what. For
+  example in a discussion round one person can say: "Every Wednesday I will be
+  at Café Paris from 3 to 5 pm. If nobody else comes, I will read my own book."
+  This will not fully solve the problem if the group size has an impact on
+  enjoyment since you can't know how many people will attend.
 
 Closing thoughts:
 
@@ -339,7 +344,10 @@ this rule contributed to the success of the group but of course there are too
 many factors to know for sure and I am heavily biased. I can think of three
 somewhat comparable groups (without such a rule) I attended in the last three
 years that fizzled out after 2 months. But again, too many factors to know for
-sure.
+sure. I have one concrete counter example where a group keeps meeting without
+such a rule. In this case I believe it is a combination of one person committing
+to always being there and the pool of potential attendees being so large it
+works out even if everyone is spontaneous.
 
 I would be very interested in hearing other people's experiences or someone
 trying a (somewhat) controlled experiment.
