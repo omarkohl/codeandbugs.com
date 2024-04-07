@@ -7,8 +7,6 @@ summary: Coordinating a group of people for a gathering (e.g. a Poker night) is
 tags:
   - poker
   - social
-build:
-  list: never
 ---
 
 A group of friends and I occasionally like to get together to play Poker. Yet
