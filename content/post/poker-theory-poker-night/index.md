@@ -21,12 +21,15 @@ Here is one theory of why this happens and how to solve it, explained with
 Poker. This article will assume Texas Hold'em Poker, probably the most popular
 variant.
 
+tl;dr People's incentives are not aligned. The solution is to create a social
+rule that makes folding (canceling attendance) have a bit of negative EV.
+
+
 ## Aside: Poker Basics
 
 You can skip this section if you are familiar with Texas Hold'em Poker.
 
-Poker is played with a standard deck of 52 cards and commonly with 2 to 9
-players.
+Poker is played with a standard deck of 52 cards and with 2 to 9 players.
 
 The game is played over many game rounds that are called hands. Unfortunately
 hand also refers to the specific cards that a player is holding, which can be a
@@ -90,14 +93,15 @@ rules [here](https://www.pokerstars.com/poker/games/texas-holdem/) or
 
 A few other concepts that appear in this article:
 
-* Chips: Small disks that represent money. In the image above you can see them
-  on the table close to the player in green, white, red and blue. Different
-  colors represent different amounts (e.g. green 10 cent, white 50 cent etc.).
+* Chips: Small disks that represent money. In the image above you can see green,
+  white, red and blue chips on the table close to the player. Different colors
+  represent different amounts (e.g. green 10 cent, white 50 cent).
 * Stack: The chips that are currently yours. In the image above those green,
   white, red and blue chips are this player's stack.
 * Pot: The chips in the center of the table where all the bets by the different
   players get added. The winner of a hand takes the pot and adds it to their
   stack. At the very beginning of a hand the pot is usually empty.
+
 
 ## ... Back to the Main Article
 
@@ -120,21 +124,22 @@ title="hearts">♥</span> and K<span class="pokerBlack" title="spades">♠</span
 then you would win. Is there _nothing_ you can say about how things might turn
 out before seeing the community cards?
 
-Yes you can say something, this is what is known as expected value or EV for
-short. What is EV? Well it is the _value_ you _expect_ to gain (or lose) in a
-particular situation. For example let's say I offer you the following bet: I
-will flip a fair coin. If it comes up heads I will give you <span>$</span>1,000
-and if it comes up tails you have to give me <span>$</span>10. Would you play?
+Yes you can say something, this is what is known as expected value (EV). What is
+EV? Well it is the _value_ you _expect_ to gain (or lose) in a particular
+situation. For example let's say I offer you the following bet: I will flip a
+fair coin. If it comes up heads I will give you <span>$</span>1,000 and if it
+comes up tails you have to give me <span>$</span>10. Would you play?
 
 Think about it for a moment. Would you play and if yes, why? The coin is really
 fair (i.e. not a trick coin that always comes up tails).
 
-![Gold dollar obverse from 1852](gold-dollar.jpg)
+![Gold dollar obverse from 1852](gold-dollar.webp)
 
 Probably you would play, but why? After all, you _could_ simply lose
 <span>$</span>10, which is not the end of the world but still sucks, right? You
 would play because the EV is positive, which you know intuitively even if you
-did not calculate it. You _expect_ (predict) the bet to generate positive
+did not calculate it (the exact calculation being: $EV = 0.5\times 1000 -
+0.5\times 10 = 495$). You _expect_ (predict) the bet to generate positive
 _value_ for you, on average.
 
 Another example, imagine you are applying for a new job. During the interview
@@ -142,11 +147,12 @@ for job H at Horrible Inc. you find that the pay is way below market, the tasks
 are boring and the colleagues are pretty nasty. Job F at Fantastic Ltd. in turn
 pays excellently, the tasks are fascinating and the colleagues are already your
 best buddies after two hours. Which of the jobs would you pick? Why? You cannot
-predict for sure that job H would not make you reach all your dreams five years
-down the line. However, the expected value of picking job F is positive (i.e.
-you predict it would make you happy) whereas the expected value of picking job H
-is negative (i.e. you predict it would make you unhappy), therefore picking job
-F is the sensible thing to do.
+predict for _sure_ that at job H you would not meet exactly the person who will
+put you on the path to becoming the happiest and most fulfilled you have ever
+been. However, the expected value of picking job F is positive (i.e. you predict
+it would make you happy) whereas the expected value of picking job H is negative
+(i.e. you predict it would make you unhappy), therefore picking job F is the
+sensible thing to do.
 
 How about in Poker, why can you say A<span class="pokerRed"
 title="hearts">♥</span> A<span class="pokerBlack" title="spades">♠</span> are
@@ -158,7 +164,7 @@ class="pokerRed" title="hearts">♥</span> 2<span class="pokerBlack"
 title="clubs">♣</span>. If you play A<span class="pokerRed"
 title="hearts">♥</span> A<span class="pokerBlack" title="spades">♠</span>
 against 7<span class="pokerRed" title="hearts">♥</span> 2<span
-class="pokerBlack" title="clubs">♣</span> 100 times, A<span class="pokerRed"
+class="pokerBlack" title="clubs">♣</span>, 100 times, A<span class="pokerRed"
 title="hearts">♥</span> A<span class="pokerBlack" title="spades">♠</span> would
 win about 87 times and 7<span class="pokerRed" title="hearts">♥</span> 2<span
 class="pokerBlack" title="clubs">♣</span> would win about 13 times.
@@ -203,11 +209,11 @@ blinds might be playing with suboptimal pocket cards so they can be beaten plus
 if other players fold easily then the pot is essentially free money. The entire
 game of Poker is only possible because of the blinds.
 
-Sometimes Poker is also played with additional obligatory bets that all players
-have to post at the beginning of the game called ante. This stimulates the
-game even further.
+Sometimes Poker is also played with additional obligatory bets that _all_
+players have to post at the beginning of the game called ante. This stimulates
+the game even further.
 
-Each player would prefer never having to post blinds or ante. Instead the player
+Each player would prefer never having to post blinds or antes. Instead the player
 would prefer looking at their own pocket cards and then deciding to either fold
 or place a bet. However, this makes the game as a whole collapse and that is why
 the added incentive of blinds and antes is needed.
@@ -236,16 +242,16 @@ If I predict that everyone else might cancel last minute due to other plans then
 I will proactively start making other plans because being stuck with a canceled
 event at the last minute or playing Poker with just one or two other people is
 not that much fun. If I start making other plans and canceling Poker night
-attendance this again negatively impacts the likelihood other people attending
-and so on... it's a vicious cycle.
+attendance this again negatively impacts the likelihood of other people
+attending and so on... it's a vicious cycle.
 
 Everyone maximizes their own EV by committing as late as possible even though
 this threatens the evening as a whole, much the same way that Poker as a game
 does not work if everyone folds all pocket cards except AA.
 
 So, what is the solution? Create a social rule that makes folding (canceling
-attendance) have a little bit of negative EV much like the blinds and ante do in
-Poker.
+attendance) have a little bit of negative EV much like the blinds and antes do
+in Poker.
 
 Some examples:
 
@@ -261,12 +267,13 @@ Some examples:
   failed to come for the second time, this is what is going on.
 
 Just like in Poker the negative impact should be small. There is a reason why
-blinds and ante are small amounts compared to your entire stack. This means that
-the Poker players who posted the blinds still have the option of folding if they
-get really terrible cards. They are not obligated to play every hand. Concerning
-gatherings, it means that if someone has got some other activity they really want
-to participate in instead of Poker night, they also have that option. In both
-cases they just have to accept the small price of losing the blind.
+blinds and antes are small amounts compared to your entire stack. This means
+that the Poker players who posted the blinds still have the option of folding if
+they get really terrible cards. They are not obligated to play every hand.
+Concerning gatherings, it means that if someone has got some other activity they
+really want to participate in instead of Poker night, they also have that
+option. In both cases they just have to accept the small price of losing the
+blind.
 
 I think one of the main reasons why this works in the game of Poker and why I
 predict it also works in gatherings is that it creates incentives to behave in a
@@ -280,13 +287,13 @@ participants know that all participants know the rules. And so on.)
 
 To re-iterate: The analogy this article is making is that before playing a hand
 in Poker if I had the choice I would always look at my pocket cards before
-making any bet. I would never voluntarily post blinds or ante. However, this
+making any bet. I would never voluntarily post blinds or antes. However, this
 makes the game not work. In social gatherings it is rational for me to delay my
 decision as long as possible without committing because then I get to maximize
 my expected value once I know how I am feeling and what options I have
 available. This, however, is detrimental to the survival of the group.
 Introducing an incentive that encourages committing and disencourages canceling
-after having committed could have the same positive effect as blinds and ante do
+after having committed could have the same positive effect as blinds and antes do
 in Poker, in particular by creating common knowledge about this very fact.
 
 Some alternative solutions:
@@ -304,7 +311,7 @@ Some alternative solutions:
   Experience has shown that each of them is 70% likely to attend. This means
   that on average about 5 friends attend each lunch. They would like to have at
   least 6 people. They can achieve this by inviting more people. If N is the
-  number of potential participants, N * 0.7 >= 6 leads us to N >= 8.57 i.e. They
+  number of potential participants, $N \times 0.7 \ge 6$ leads us to $N \ge 8.57$ i.e. They
   need to invite at least 9 people total. Note that in reality of course
   different people have different probabilities of attending.
 
@@ -315,7 +322,6 @@ Closing thoughts:
   something very similar before. In particular, the whole thing can also be
   framed as a [stag
   hunt](https://www.lesswrong.com/posts/zp5AEENssb8ZDnoZR/the-schelling-choice-is-rabbit-not-stag).
-  I don't _really_ know what I'm talking about!
 * Introducing (monetary) _punishments_ (an incentive can easily be understood as
   a punishment) to social relationships can probably do a lot of damage, so be
   careful.
@@ -326,15 +332,31 @@ Closing thoughts:
   fact do make decisions to benefit a group out of pure altruism.
 
 
+## Empirical Data
+
+I started a book club in February 2023 and since the beginning I pushed for the
+rule that if you don't come, you pay for everyone's drinks next time. The club
+has been meeting almost every week for over a year and is growing. I believe
+this rule contributed to the success of the group but of course there are too
+many factors to know for sure and I am heavily biased. I can think of three
+somewhat comparable groups (without such a rule) I attended in the last three
+years that fizzled out after 2 months. But again, too many factors to know for
+sure.
+
+I would be very interested in hearing other people's experiences or someone
+trying a (somewhat) controlled experiment.
+
+
 ## Credits
 
+* Many thanks to Anjali, Catarina, Daniel (@7secularsermons), Bijay, Hauke,
+  Nawid and Robert for proof reading, criticism and suggestions.
 * Image with pocket and community cards:
   * Bob de Becker
   * License CC-BY-2.0
   * https://commons.wikimedia.org/wiki/File:All_in_(23243546592).jpg
 * Gold dollar coin
+  * (I removed the white background and converted it to webp format)
   * Coin: James B. Longacre. Image by Lost Dutchman Rare Coins
   * License CC BY-SA 3.0 US Deed
   * https://commons.wikimedia.org/wiki/File:1852_gold_dollar_obverse.jpg
-* Many thanks to Catarina, Bijay, Hauke and Nawid for proof reading, criticism
-  and suggestions.
