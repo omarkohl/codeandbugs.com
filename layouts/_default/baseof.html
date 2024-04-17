@@ -13,7 +13,7 @@
   {{ if .Description }}
   <meta name="description" content="{{ .Description }}">
   {{ else if and .IsPage .Summary }}
-  <meta name="description" content="{{ .Summary }}">
+  <meta name="description" content="{{ .Summary | truncate 220 "..."}}">
   {{ else }}
   <meta name="description" content="{{ .Site.Params.description }}">
   {{ end }}
