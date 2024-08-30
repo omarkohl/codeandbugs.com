@@ -175,3 +175,19 @@ time {
 #footer > .footnote {
     text-align: center;
 }
+
+/* flexbox */
+
+.flexing {
+	display: flex;
+	flex-direction: row;
+	gap: 5%;
+}
+
+@media screen and (max-width:768px) {
+	.flexing {
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+	}
+}
