@@ -186,6 +186,7 @@ time {
 }
 
 .responsive {
+	margin: auto;
 	max-width: 100%;
 	height: auto;
 }
