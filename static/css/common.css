@@ -179,9 +179,27 @@ time {
 /* flexbox */
 
 .flexing {
+	margin: auto;
 	display: flex;
 	flex-direction: row;
 	gap: 5%;
+}
+
+.responsive {
+	max-width: 100%;
+	height: auto;
+}
+
+.photoflex {
+	display: flex;
+	flex-direction: column;
+	gap: 5%;
+}
+
+.responsivephoto {
+	margin: auto;
+	max-width: 80%;
+	height: auto;
 }
 
 @media screen and (max-width:768px) {
@@ -189,5 +207,17 @@ time {
 		display: flex;
 		flex-direction: column;
 		row-gap: 20px;
+	}
+
+	.responsive {
+		margin: auto;
+		max-width: 40%;
+		height: auto;
+	}
+
+	.responsivephoto {
+		margin: auto;
+		max-width: 100%;
+		height: auto;
 	}
 }
