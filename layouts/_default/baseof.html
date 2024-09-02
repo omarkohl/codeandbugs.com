@@ -81,6 +81,10 @@
   {{ range .Site.Params.customJS }}
   <script src="{{ . | absURL }}"></script>
   {{ end }}
+
+  <!-- google analytics -->
+  {{ template "_internal/google_analytics.html" . }}
+
 </body>
 
 </html>
