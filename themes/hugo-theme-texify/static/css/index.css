@@ -1,0 +1,31 @@
+#main > .post + .post {
+    margin-top: 2rem;
+}
+
+#main > h1 {
+	padding-bottom: 1.2rem;
+	padding-top: 1.05rem;
+	font-size:1.8rem;
+}
+
+#main > .post > h2 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#main > .post > h2 > time {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+#main > .post > .content {
+    padding-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    #main > .post > div {
+        margin-left: 2rem;
+    }
+}
