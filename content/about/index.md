@@ -17,4 +17,4 @@ Unless otherwise specified code samples are licensed under [MIT](https://choosea
 ## Credits
 
 * Powered by [Hugo](https://gohugo.io/)
-* Theme [TeXify](https://github.com/queensferryme/hugo-theme-texify)
+* Theme [TeXify](https://github.com/drostamloo/hugo-theme-texify.git)
