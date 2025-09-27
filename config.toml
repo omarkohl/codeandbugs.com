@@ -5,6 +5,10 @@ theme = 'hugo-theme-texify'
 
 enableGitInfo = true
 
+[author]
+email = "info@codeandbugs.com"
+name = "Omar"
+
 [markup.goldmark.renderer]
 unsafe = true # enable html in markdown
 
