@@ -90,6 +90,14 @@
     max-width: 100%;
 }
 
+/*
+@media screen and (max-width:768px) {
+	.content img {
+		max-width: 40%;
+	}
+}
+*/
+
 .content p {
     text-align: justify;
 }
@@ -97,7 +105,7 @@
 .content pre {
     background-color: #F5F5F5!important;
     border-radius: .2rem;
-    font-family: 'Latin Modern Mono', Courier, monospace;
+    font-family: 'TeX Gyre Pagella', Courier, monospace;
     margin-top: .5rem;
     overflow-x: auto;
     padding: .5rem;

@@ -1,146 +1,146 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Poker on CodeAndBugs</title><link>https://www.codeandbugs.com/tags/poker/</link><description>Recent content in Poker on CodeAndBugs</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 22 Mar 2024 20:13:34 +0100</lastBuildDate><atom:link href="https://www.codeandbugs.com/tags/poker/index.xml" rel="self" type="application/rss+xml"/><item><title>The Poker Theory of Poker Night</title><link>https://www.codeandbugs.com/post/poker-theory-poker-night/</link><pubDate>Fri, 22 Mar 2024 20:13:34 +0100</pubDate><guid>https://www.codeandbugs.com/post/poker-theory-poker-night/</guid><description>&lt;p>A group of friends and I occasionally like to get together to play Poker. Yet
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Poker on CodeAndBugs</title><link>https://www.codeandbugs.com/tags/poker/</link><description>Recent content in Poker on CodeAndBugs</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 22 Mar 2024 20:13:34 +0100</lastBuildDate><atom:link href="https://www.codeandbugs.com/tags/poker/index.xml" rel="self" type="application/rss+xml"/><item><title>The Poker Theory of Poker Night</title><link>https://www.codeandbugs.com/post/poker-theory-poker-night/</link><pubDate>Fri, 22 Mar 2024 20:13:34 +0100</pubDate><guid>https://www.codeandbugs.com/post/poker-theory-poker-night/</guid><description>&lt;p&gt;A group of friends and I occasionally like to get together to play Poker. Yet
 something keeps happening that I have observed time and again with these kinds
 of group gatherings: It is hard to find a suitable date and then on top people
 cancel last minute. This is demotivating for other participants, who in turn
-also become less committed and this often leads to such groups failing.&lt;/p>
-&lt;p>Here is one theory of why this happens and how to solve it, explained with
+also become less committed and this often leads to such groups failing.&lt;/p&gt;
+&lt;p&gt;Here is one theory of why this happens and how to solve it, explained with
 Poker. This article will assume Texas Hold&amp;rsquo;em Poker, probably the most popular
-variant.&lt;/p>
-&lt;p>tl;dr People&amp;rsquo;s incentives are not aligned. The solution is to create a social
-rule that makes folding (canceling attendance) have a bit of negative EV.&lt;/p>
-&lt;h2 id="aside-poker-basics">Aside: Poker Basics&lt;/h2>
-&lt;p>You can skip this section if you are familiar with Texas Hold&amp;rsquo;em Poker.&lt;/p>
-&lt;p>Poker is played with a standard deck of 52 cards and with 2 to 9 players.&lt;/p>
-&lt;p>The game is played over many game rounds that are called hands. Unfortunately
+variant.&lt;/p&gt;
+&lt;p&gt;tl;dr People&amp;rsquo;s incentives are not aligned. The solution is to create a social
+rule that makes folding (canceling attendance) have a bit of negative EV.&lt;/p&gt;
+&lt;h2 id="aside-poker-basics"&gt;Aside: Poker Basics&lt;/h2&gt;
+&lt;p&gt;You can skip this section if you are familiar with Texas Hold&amp;rsquo;em Poker.&lt;/p&gt;
+&lt;p&gt;Poker is played with a standard deck of 52 cards and with 2 to 9 players.&lt;/p&gt;
+&lt;p&gt;The game is played over many game rounds that are called hands. Unfortunately
 hand also refers to the specific cards that a player is holding, which can be a
-little confusing.&lt;/p>
-&lt;p>At the beginning of the hand each player gets two cards that only the player
-themself gets to see. These are the pocket cards. For example A♣️ and A♦️.&lt;/p>
-&lt;p>Then over the course of several rounds up to a total of 5 cards are added to the
+little confusing.&lt;/p&gt;
+&lt;p&gt;At the beginning of the hand each player gets two cards that only the player
+themself gets to see. These are the pocket cards. For example A♣️ and A♦️.&lt;/p&gt;
+&lt;p&gt;Then over the course of several rounds up to a total of 5 cards are added to the
 middle of the table, face-up i.e. everyone gets to see them. These are the
-community cards. For example 9♦️, T♠️, A♠️, Q♣️ and A♥️. (&lt;strong>Note:&lt;/strong> T stands for
+community cards. For example 9♦️, T♠️, A♠️, Q♣️ and A♥️. (&lt;strong&gt;Note:&lt;/strong&gt; T stands for
 10 so that all ranks can be written using a single character: 2, 3, 4, 5, 6, 7,
-8, 9, T, J, Q, K, A).&lt;/p>
-&lt;p>&lt;img src="pocket-community-cards.jpg" alt="A player holding their pocket cards and in the back the five community cards
-on the table.">&lt;/p>
-&lt;p>&lt;small>Above you see a player holding their pocket cards and in the back the
-five community cards on the table.&lt;/small>&lt;/p>
-&lt;p>At the end of the hand during the &lt;em>showdown&lt;/em> each player gets to choose 5 total
+8, 9, T, J, Q, K, A).&lt;/p&gt;
+&lt;p&gt;&lt;img src="pocket-community-cards.jpg" alt="A player holding their pocket cards and in the back the five community cards
+on the table."&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Above you see a player holding their pocket cards and in the back the
+five community cards on the table.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;At the end of the hand during the &lt;em&gt;showdown&lt;/em&gt; each player gets to choose 5 total
 cards out of the 7 available cards (their two pockets cards plus the five
 community cards). All players share the community cards so they can be used
 multiple times. For example the player in the example above would choose A♣️,
 A♦️, A♠️, A♥️ and Q♣️ for a final hand combination of four of a kind aces and
 queen kicker (which is a very strong hand). The fact that this player used two
 aces and the queen from the community cards does NOT prevent other players from
-using them too.&lt;/p>
-&lt;p>The strongest hand wins and takes the money in the center of the table (the
-pot).&lt;/p>
-&lt;p>The hands are ranked from the strongest, Royal Flush (e.g. A♦️, K♦️, Q♦️, J♦️
+using them too.&lt;/p&gt;
+&lt;p&gt;The strongest hand wins and takes the money in the center of the table (the
+pot).&lt;/p&gt;
+&lt;p&gt;The hands are ranked from the strongest, Royal Flush (e.g. A♦️, K♦️, Q♦️, J♦️
 and T♦️), all the way to the weakest, High Card (e.g. A♥️, 8♠️, 5♦️, 3♣️ and
 2♣️). Read more about hands rankings
-&lt;a href="https://www.pokerstars.com/poker/learn/lesson/poker-hand-rankings/">here&lt;/a>.&lt;/p>
-&lt;p>Of course there are many details missing, in particular during the hand there
+&lt;a href="https://www.pokerstars.com/poker/learn/lesson/poker-hand-rankings/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Of course there are many details missing, in particular during the hand there
 are several rounds where players can place bets and raise the bets of other
 players. This means that the showdown is not always reached since it can happen
-that all players except one &lt;em>fold&lt;/em> (give up). Then the only remaining player is
+that all players except one &lt;em&gt;fold&lt;/em&gt; (give up). Then the only remaining player is
 the automatic winner of that hand and takes the pot. Read some more about the
-rules &lt;a href="https://www.pokerstars.com/poker/games/texas-holdem/">here&lt;/a> or
-&lt;a href="https://en.wikipedia.org/wiki/Texas_hold_'em">here&lt;/a>.&lt;/p>
-&lt;p>A few other concepts that appear in this article:&lt;/p>
-&lt;ul>
-&lt;li>Chips: Small disks that represent money. In the image above you can see green,
+rules &lt;a href="https://www.pokerstars.com/poker/games/texas-holdem/"&gt;here&lt;/a&gt; or
+&lt;a href="https://en.wikipedia.org/wiki/Texas_hold_'em"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A few other concepts that appear in this article:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Chips: Small disks that represent money. In the image above you can see green,
 white, red and blue chips on the table close to the player. Different colors
-represent different amounts (e.g. green 10 cent, white 50 cent).&lt;/li>
-&lt;li>Stack: The chips that are currently yours. In the image above those green,
-white, red and blue chips are this player&amp;rsquo;s stack.&lt;/li>
-&lt;li>Pot: The chips in the center of the table where all the bets by the different
+represent different amounts (e.g. green 10 cent, white 50 cent).&lt;/li&gt;
+&lt;li&gt;Stack: The chips that are currently yours. In the image above those green,
+white, red and blue chips are this player&amp;rsquo;s stack.&lt;/li&gt;
+&lt;li&gt;Pot: The chips in the center of the table where all the bets by the different
 players get added. The winner of a hand takes the pot and adds it to their
-stack. At the very beginning of a hand the pot is usually empty.&lt;/li>
-&lt;/ul>
-&lt;h2 id="-back-to-the-main-article">&amp;hellip; Back to the Main Article&lt;/h2>
-&lt;p>Let&amp;rsquo;s assume you are at the beginning of a Poker hand with just one other player
+stack. At the very beginning of a hand the pot is usually empty.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-back-to-the-main-article"&gt;&amp;hellip; Back to the Main Article&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s assume you are at the beginning of a Poker hand with just one other player
 (Victoria) and you just got dealt A♥️ and A♠️ whereas she got dealt 7♥️ and 2♣️
 (of course, in a real game you do not know what other players get dealt). No
 community cards have been uncovered. Who of you is going to win at showdown?
 That is impossible to predict, right? Well, not quite. You cannot make a certain
 prediction, for example if the community cards end up being 7♠️, 7♣️, 2♦️, 8♣️
 and 9♣️ then Victoria would win whereas if the community cards end up being A♦️,
-3♦️, 5♠️, 2♥️ and K♠️ then you would win. Is there &lt;em>nothing&lt;/em> you can say about
-how things might turn out before seeing the community cards?&lt;/p>
-&lt;p>Yes you can say something, this is what is known as expected value (EV). What is
-EV? Well it is the &lt;em>value&lt;/em> you &lt;em>expect&lt;/em> to gain (or lose) in a particular
+3♦️, 5♠️, 2♥️ and K♠️ then you would win. Is there &lt;em&gt;nothing&lt;/em&gt; you can say about
+how things might turn out before seeing the community cards?&lt;/p&gt;
+&lt;p&gt;Yes you can say something, this is what is known as expected value (EV). What is
+EV? Well it is the &lt;em&gt;value&lt;/em&gt; you &lt;em&gt;expect&lt;/em&gt; to gain (or lose) in a particular
 situation. For example let&amp;rsquo;s say I offer you the following bet: I will flip a
-fair coin. If it comes up heads I will give you &lt;span>$&lt;/span>1,000 and if it
-comes up tails you have to give me &lt;span>$&lt;/span>10. Would you play?&lt;/p>
-&lt;p>Think about it for a moment. Would you play and if yes, why? The coin is really
-fair (i.e. not a trick coin that always comes up tails).&lt;/p>
-&lt;p>&lt;img src="gold-dollar.webp" alt="Gold dollar obverse from 1852">&lt;/p>
-&lt;p>Probably you would play, but why? After all, you &lt;em>could&lt;/em> simply lose
-&lt;span>$&lt;/span>10, which is not the end of the world but still sucks, right? You
+fair coin. If it comes up heads I will give you &lt;span&gt;$&lt;/span&gt;1,000 and if it
+comes up tails you have to give me &lt;span&gt;$&lt;/span&gt;10. Would you play?&lt;/p&gt;
+&lt;p&gt;Think about it for a moment. Would you play and if yes, why? The coin is really
+fair (i.e. not a trick coin that always comes up tails).&lt;/p&gt;
+&lt;p&gt;&lt;img src="gold-dollar.webp" alt="Gold dollar obverse from 1852"&gt;&lt;/p&gt;
+&lt;p&gt;Probably you would play, but why? After all, you &lt;em&gt;could&lt;/em&gt; simply lose
+&lt;span&gt;$&lt;/span&gt;10, which is not the end of the world but still sucks, right? You
 would play because the EV is positive, which you know intuitively even if you
 did not calculate it (the exact calculation being: $EV = 0.5\times 1000 -
-0.5\times 10 = 495$). You &lt;em>expect&lt;/em> (predict) the bet to generate positive
-&lt;em>value&lt;/em> for you, on average.&lt;/p>
-&lt;p>Another example, imagine you are applying for a new job. During the interview
+0.5\times 10 = 495$). You &lt;em&gt;expect&lt;/em&gt; (predict) the bet to generate positive
+&lt;em&gt;value&lt;/em&gt; for you, on average.&lt;/p&gt;
+&lt;p&gt;Another example, imagine you are applying for a new job. During the interview
 for job H at Horrible Inc. you find that the pay is way below market, the tasks
 are boring and the colleagues are pretty nasty. Job F at Fantastic Ltd. in turn
 pays excellently, the tasks are fascinating and the colleagues are already your
 best buddies after two hours. Which of the jobs would you pick? Why? You cannot
-predict for &lt;em>sure&lt;/em> that at job H you would not meet exactly the person who will
+predict for &lt;em&gt;sure&lt;/em&gt; that at job H you would not meet exactly the person who will
 put you on the path to becoming the happiest and most fulfilled you have ever
 been. However, the expected value of picking job F is positive (i.e. you predict
 it would make you happy) whereas the expected value of picking job H is negative
 (i.e. you predict it would make you unhappy), therefore picking job F is the
-sensible thing to do.&lt;/p>
-&lt;p>How about in Poker, why can you say A♥️ A♠️ are better pocket cards than 7♥️
+sensible thing to do.&lt;/p&gt;
+&lt;p&gt;How about in Poker, why can you say A♥️ A♠️ are better pocket cards than 7♥️
 2♣️? Because on average the player with A♥️ A♠️ will win much more often than
 the player with 7♥️ 2♣️. If you play A♥️ A♠️ against 7♥️ 2♣️, 100 times, A♥️ A♠️
-would win about 87 times and 7♥️ 2♣️ would win about 13 times.&lt;/p>
-&lt;p>Note: In the following paragraphs I&amp;rsquo;m making the assumption that there are no
+would win about 87 times and 7♥️ 2♣️ would win about 13 times.&lt;/p&gt;
+&lt;p&gt;Note: In the following paragraphs I&amp;rsquo;m making the assumption that there are no
 blinds in Poker to make a point. If you don&amp;rsquo;t know what blinds are, it&amp;rsquo;s
-explained later.&lt;/p>
-&lt;p>So based only on your pocket cards you can already make a prediction how likely
+explained later.&lt;/p&gt;
+&lt;p&gt;So based only on your pocket cards you can already make a prediction how likely
 it is you are going to win. If you get dealt pocket cards that have a low EV,
 what is the sensible thing to do? Fold (i.e. give up) and wait for the next
 hand. So just fold anything that is not the very strongest pocket cards i.e. AA,
 AK or KK. In a table of 9 players everyone that does not have one of those hands
 would just fold. In fact, once everyone realizes this is what is going on,
 everyone would fold any hand except AA just to be on the safe side, since this
-is the one with the highest EV in the entire game.&lt;/p>
-&lt;p>Even before the community cards were dealt the winner would already be clear and
+is the one with the highest EV in the entire game.&lt;/p&gt;
+&lt;p&gt;Even before the community cards were dealt the winner would already be clear and
 what is worse, the pot would not even contain any money because nobody would
-have bet anything.&lt;/p>
-&lt;p>That sounds like a truly terrible game!&lt;/p>
-&lt;p>What could you do to solve this? One of you could say to the other players:
+have bet anything.&lt;/p&gt;
+&lt;p&gt;That sounds like a truly terrible game!&lt;/p&gt;
+&lt;p&gt;What could you do to solve this? One of you could say to the other players:
 &amp;ldquo;Come on people, this is boring, we all want to see some action, let&amp;rsquo;s not fold
 immediately but play a little!&amp;rdquo; Everyone would nod dutifully and do as
-suggested&amp;hellip; right? Problem solved!&lt;/p>
-&lt;p>Well, not really. Sooner or later one player would figure out that if they fold
+suggested&amp;hellip; right? Problem solved!&lt;/p&gt;
+&lt;p&gt;Well, not really. Sooner or later one player would figure out that if they fold
 their bad hands a little more frequently they would start losing a little less
 and then other players would follow their example and everyone would end up
-exactly where you started.&lt;/p>
-&lt;p>This is why Poker has blinds. Blinds are obligatory bets placed at the beginning
+exactly where you started.&lt;/p&gt;
+&lt;p&gt;This is why Poker has blinds. Blinds are obligatory bets placed at the beginning
 of each hand blindly (without seeing their pocket cards) by two of the players.
-Which two players rotates every hand.&lt;/p>
-&lt;p>What is the point of the blinds? It makes the two players who posted the blinds
+Which two players rotates every hand.&lt;/p&gt;
+&lt;p&gt;What is the point of the blinds? It makes the two players who posted the blinds
 much more likely to play even with suboptimal pocket cards and it makes other
 players more likely to play too because they know the players who posted the
 blinds might be playing with suboptimal pocket cards so they can be beaten plus
 if other players fold easily then the pot is essentially free money. The entire
-game of Poker is only possible because of the blinds.&lt;/p>
-&lt;p>Sometimes Poker is also played with additional obligatory bets that &lt;em>all&lt;/em>
+game of Poker is only possible because of the blinds.&lt;/p&gt;
+&lt;p&gt;Sometimes Poker is also played with additional obligatory bets that &lt;em&gt;all&lt;/em&gt;
 players have to post at the beginning of the game called ante. This stimulates
-the game even further.&lt;/p>
-&lt;p>Each player would prefer never having to post blinds or antes. Instead the player
+the game even further.&lt;/p&gt;
+&lt;p&gt;Each player would prefer never having to post blinds or antes. Instead the player
 would prefer looking at their own pocket cards and then deciding to either fold
 or place a bet. However, this makes the game as a whole collapse and that is why
-the added incentive of blinds and antes is needed.&lt;/p>
-&lt;h2 id="returning-to-poker-nights">Returning to Poker nights&lt;/h2>
-&lt;p>&amp;hellip; and other similar gatherings. Let&amp;rsquo;s assume everyone who joins generally
+the added incentive of blinds and antes is needed.&lt;/p&gt;
+&lt;h2 id="returning-to-poker-nights"&gt;Returning to Poker nights&lt;/h2&gt;
+&lt;p&gt;&amp;hellip; and other similar gatherings. Let&amp;rsquo;s assume everyone who joins generally
 enjoys it. At the same time, Poker night is not their highest priority in life.
 There are about 56 other things that, given the right circumstances, take
 priority over Poker night for each person. Therefore, for each person what
-&lt;em>would be perfect&lt;/em> is to know that Poker night takes place and that enough other
+&lt;em&gt;would be perfect&lt;/em&gt; is to know that Poker night takes place and that enough other
 people participate (because then it&amp;rsquo;s more fun) but that they themself can
 decide spontaneously up to the last minute whether they are going to join or
 not. This maximizes their EV because they get to choose out of all the options
@@ -151,51 +151,51 @@ staying home or in fact going to Poker night. The alternatives are all
 reasonable things people enjoy doing and it make total sense that they would
 sometimes or even always take priority over Poker night. Not to speak of
 emergencies and illness. Going to Poker night right after breaking your arm
-might be &lt;em>possible&lt;/em> but has a very negative EV.&lt;/p>
-&lt;p>However, how does this impact the other people who want to come to Poker night?
+might be &lt;em&gt;possible&lt;/em&gt; but has a very negative EV.&lt;/p&gt;
+&lt;p&gt;However, how does this impact the other people who want to come to Poker night?
 If I predict that everyone else might cancel last minute due to other plans then
 I will proactively start making other plans because being stuck with a canceled
 event at the last minute or playing Poker with just one or two other people is
 not that much fun. If I start making other plans and canceling Poker night
 attendance this again negatively impacts the likelihood of other people
-attending and so on&amp;hellip; it&amp;rsquo;s a vicious cycle.&lt;/p>
-&lt;p>Everyone maximizes their own EV by committing as late as possible even though
+attending and so on&amp;hellip; it&amp;rsquo;s a vicious cycle.&lt;/p&gt;
+&lt;p&gt;Everyone maximizes their own EV by committing as late as possible even though
 this threatens the evening as a whole, much the same way that Poker as a game
-does not work if everyone folds all pocket cards except AA.&lt;/p>
-&lt;p>So, what is the solution? Create a social rule that makes folding (canceling
+does not work if everyone folds all pocket cards except AA.&lt;/p&gt;
+&lt;p&gt;So, what is the solution? Create a social rule that makes folding (canceling
 attendance) have a little bit of negative EV much like the blinds and antes do
-in Poker.&lt;/p>
-&lt;p>Some examples:&lt;/p>
-&lt;ul>
-&lt;li>If someone said they would attend but they do not, they have to buy a round of
-drinks for everyone the next time they come.&lt;/li>
-&lt;li>If someone commits to attending they have to transfer the money for the first
+in Poker.&lt;/p&gt;
+&lt;p&gt;Some examples:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If someone said they would attend but they do not, they have to buy a round of
+drinks for everyone the next time they come.&lt;/li&gt;
+&lt;li&gt;If someone commits to attending they have to transfer the money for the first
 buy-in (or a fraction of it) to the host of the evening. If the participant
 cancels after this, they get no refund and their money gets added to the pot
-in small increments.&lt;/li>
-&lt;li>Use social pressure, reputation or shame to make &lt;em>folding&lt;/em> expensive.
+in small increments.&lt;/li&gt;
+&lt;li&gt;Use social pressure, reputation or shame to make &lt;em&gt;folding&lt;/em&gt; expensive.
 Presumably this is what many groups do implicitly without ever consciously
 deciding on it. If your bowling group gives Pedro the cold shoulder after he
-failed to come for the second time, this is what is going on.&lt;/li>
-&lt;/ul>
-&lt;p>Just like in Poker the negative impact should be small. There is a reason why
+failed to come for the second time, this is what is going on.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Just like in Poker the negative impact should be small. There is a reason why
 blinds and antes are small amounts compared to your entire stack. This means
 that the Poker players who posted the blinds still have the option of folding if
 they get really terrible cards. They are not obligated to play every hand.
 Concerning gatherings, it means that if someone has got some other activity they
 really want to participate in instead of Poker night, they also have that
 option. In both cases they just have to accept the small price of losing the
-blind.&lt;/p>
-&lt;p>I think one of the main reasons why this works in the game of Poker and why I
+blind.&lt;/p&gt;
+&lt;p&gt;I think one of the main reasons why this works in the game of Poker and why I
 predict it also works in gatherings is that it creates incentives to behave in a
-certain way but much &lt;strong>more importantly&lt;/strong> it creates &lt;strong>common knowledge&lt;/strong> that
+certain way but much &lt;strong&gt;more importantly&lt;/strong&gt; it creates &lt;strong&gt;common knowledge&lt;/strong&gt; that
 those incentives exist, meaning everyone is able to rely much more on other
 people&amp;rsquo;s behavior and due to this fact they themself start behaving in ways that
 benefit the game (or group) more. (Common knowledge means all participants know
 the rules. It also means that all participants know that all other participants
 know the rules. And it also means that all participants know that all other
-participants know that all participants know the rules. And so on.)&lt;/p>
-&lt;p>To re-iterate: The analogy this article is making is that before playing a hand
+participants know that all participants know the rules. And so on.)&lt;/p&gt;
+&lt;p&gt;To re-iterate: The analogy this article is making is that before playing a hand
 in Poker if I had the choice I would always look at my pocket cards before
 making any bet. I would never voluntarily post blinds or antes. However, this
 makes the game not work. In social gatherings it is rational for me to delay my
@@ -204,49 +204,49 @@ my expected value once I know how I am feeling and what options I have
 available. This, however, is detrimental to the survival of the group.
 Introducing an incentive that encourages committing and disencourages canceling
 after having committed could have the same positive effect as blinds and antes do
-in Poker, in particular by creating common knowledge about this very fact.&lt;/p>
-&lt;p>Some alternative solutions:&lt;/p>
-&lt;ul>
-&lt;li>Make &lt;em>folding&lt;/em> extremely expensive so nobody ever does it. For example a
+in Poker, in particular by creating common knowledge about this very fact.&lt;/p&gt;
+&lt;p&gt;Some alternative solutions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make &lt;em&gt;folding&lt;/em&gt; extremely expensive so nobody ever does it. For example a
 college course that ejects students who are absent even once (unless they
-bring a doctor&amp;rsquo;s note).&lt;/li>
-&lt;li>Make whathever the group is doing more attractive so that the EV of attending
+bring a doctor&amp;rsquo;s note).&lt;/li&gt;
+&lt;li&gt;Make whathever the group is doing more attractive so that the EV of attending
 increases, thus making attendees less likely to choose another activity. For
 example, if you are organizing talks you can try to get more popular and
 interesting speakers. Artificially limiting the number of available spots
-could be another way of increasing the perceived value of the event.&lt;/li>
-&lt;li>Increase the size of the pool of potential attendees. For example assume that
+could be another way of increasing the perceived value of the event.&lt;/li&gt;
+&lt;li&gt;Increase the size of the pool of potential attendees. For example assume that
 a group of 7 friends meets for lunch the last Sunday of every month.
 Experience has shown that each of them is 70% likely to attend. This means
 that on average about 5 friends attend each lunch. They would like to have at
 least 6 people. They can achieve this by inviting more people. If N is the
 number of potential participants, $N \times 0.7 \ge 6$ leads us to $N \ge 8.57$ i.e. They
 need to invite at least 9 people total. Note that in reality of course
-different people have different probabilities of attending.&lt;/li>
-&lt;li>One person commits to the event always taking place no matter what. For
+different people have different probabilities of attending.&lt;/li&gt;
+&lt;li&gt;One person commits to the event always taking place no matter what. For
 example in a discussion round one person can say: &amp;ldquo;Every Wednesday I will be
 at Café Paris from 3 to 5 pm. If nobody else comes, I will read my own book.&amp;rdquo;
 This will not fully solve the problem if the group size has an impact on
-enjoyment since you can&amp;rsquo;t know how many people will attend.&lt;/li>
-&lt;/ul>
-&lt;p>Closing thoughts:&lt;/p>
-&lt;ul>
-&lt;li>This is just an idea I came up with. Maybe it&amp;rsquo;s completely wrong, probably
+enjoyment since you can&amp;rsquo;t know how many people will attend.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Closing thoughts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This is just an idea I came up with. Maybe it&amp;rsquo;s completely wrong, probably
 it&amp;rsquo;s missing some important considerations and probably others came up with
 something very similar before. In particular, the whole thing can also be
-framed as a &lt;a href="https://www.lesswrong.com/posts/zp5AEENssb8ZDnoZR/the-schelling-choice-is-rabbit-not-stag">stag
-hunt&lt;/a>.&lt;/li>
-&lt;li>Introducing (monetary) &lt;em>punishments&lt;/em> (an incentive can easily be understood as
+framed as a &lt;a href="https://www.lesswrong.com/posts/zp5AEENssb8ZDnoZR/the-schelling-choice-is-rabbit-not-stag"&gt;stag
+hunt&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Introducing (monetary) &lt;em&gt;punishments&lt;/em&gt; (an incentive can easily be understood as
 a punishment) to social relationships can probably do a lot of damage, so be
-careful.&lt;/li>
-&lt;li>Talking about EV when meeting friends could be perceived as cold and could
+careful.&lt;/li&gt;
+&lt;li&gt;Talking about EV when meeting friends could be perceived as cold and could
 damage relationships, so again, be careful. Not everyone likes
-thinking and talking explicitly about such things.&lt;/li>
-&lt;li>Very few people exclusively maximize their own EV. People are capable and in
-fact do make decisions to benefit a group out of pure altruism.&lt;/li>
-&lt;/ul>
-&lt;h2 id="empirical-data">Empirical Data&lt;/h2>
-&lt;p>I started a book club in February 2023 and since the beginning I pushed for the
+thinking and talking explicitly about such things.&lt;/li&gt;
+&lt;li&gt;Very few people exclusively maximize their own EV. People are capable and in
+fact do make decisions to benefit a group out of pure altruism.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="empirical-data"&gt;Empirical Data&lt;/h2&gt;
+&lt;p&gt;I started a book club in February 2023 and since the beginning I pushed for the
 rule that if you don&amp;rsquo;t come, you pay for everyone&amp;rsquo;s drinks next time. The club
 has been meeting almost every week for over a year and is growing. I believe
 this rule contributed to the success of the group but of course there are too
@@ -256,27 +256,27 @@ years that fizzled out after 2 months. But again, too many factors to know for
 sure. I have one concrete counter example where a group keeps meeting without
 such a rule. In this case I believe it is a combination of one person committing
 to always being there and the pool of potential attendees being so large it
-works out even if everyone is spontaneous.&lt;/p>
-&lt;p>I would be very interested in hearing other people&amp;rsquo;s experiences or someone
-trying a (somewhat) controlled experiment.&lt;/p>
-&lt;h2 id="credits">Credits&lt;/h2>
-&lt;ul>
-&lt;li>Many thanks to Anjali, Bijay, Catarina, Daniel
-(&lt;a href="https://sevensecularsermons.org">@7secularsermons&lt;/a>), Hauke, Nawid and Robert
-for proof reading, criticism and suggestions.&lt;/li>
-&lt;li>Image with pocket and community cards:
-&lt;ul>
-&lt;li>Bob de Becker&lt;/li>
-&lt;li>License CC-BY-2.0&lt;/li>
-&lt;li>&lt;a href="https://commons.wikimedia.org/wiki/File:All_in_(23243546592).jpg">https://commons.wikimedia.org/wiki/File:All_in_(23243546592).jpg&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Gold dollar coin
-&lt;ul>
-&lt;li>(I removed the white background and converted it to webp format)&lt;/li>
-&lt;li>Coin: James B. Longacre. Image by Lost Dutchman Rare Coins&lt;/li>
-&lt;li>License CC BY-SA 3.0 US Deed&lt;/li>
-&lt;li>&lt;a href="https://commons.wikimedia.org/wiki/File:1852_gold_dollar_obverse.jpg">https://commons.wikimedia.org/wiki/File:1852_gold_dollar_obverse.jpg&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul></description></item></channel></rss>
+works out even if everyone is spontaneous.&lt;/p&gt;
+&lt;p&gt;I would be very interested in hearing other people&amp;rsquo;s experiences or someone
+trying a (somewhat) controlled experiment.&lt;/p&gt;
+&lt;h2 id="credits"&gt;Credits&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Many thanks to Anjali, Bijay, Catarina, Daniel
+(&lt;a href="https://sevensecularsermons.org"&gt;@7secularsermons&lt;/a&gt;), Hauke, Nawid and Robert
+for proof reading, criticism and suggestions.&lt;/li&gt;
+&lt;li&gt;Image with pocket and community cards:
+&lt;ul&gt;
+&lt;li&gt;Bob de Becker&lt;/li&gt;
+&lt;li&gt;License CC-BY-2.0&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://commons.wikimedia.org/wiki/File:All_in_(23243546592).jpg"&gt;https://commons.wikimedia.org/wiki/File:All_in_(23243546592).jpg&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Gold dollar coin
+&lt;ul&gt;
+&lt;li&gt;(I removed the white background and converted it to webp format)&lt;/li&gt;
+&lt;li&gt;Coin: James B. Longacre. Image by Lost Dutchman Rare Coins&lt;/li&gt;
+&lt;li&gt;License CC BY-SA 3.0 US Deed&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://commons.wikimedia.org/wiki/File:1852_gold_dollar_obverse.jpg"&gt;https://commons.wikimedia.org/wiki/File:1852_gold_dollar_obverse.jpg&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

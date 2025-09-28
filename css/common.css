@@ -2,66 +2,66 @@
 
 @font-face {
     font-display: swap;
-    font-family: 'Latin Modern Mono';
+    font-family: 'TeX Gyre Pagella';
     font-style: normal;
     font-weight: bold;
-    src: url('../font/lmmono-bold.woff');
+    src: url('../font/TeX-Gyre-Pagella/texgyrepagella-bold.woff');
 }
 
 @font-face {
     font-display: swap;
-    font-family: 'Latin Modern Mono';
+    font-family: 'TeX Gyre Pagella';
     font-style: italic;
     font-weight: bold;
-    src: url('../font/lmmono-bolditalic.woff');
+    src: url('../font/TeX-Gyre-Pagella/texgyrepagella-bolditalic.woff');
 }
 
 @font-face {
     font-display: swap;
-    font-family: 'Latin Modern Mono';
+    font-family: 'TeX Gyre Pagella';
     font-style: italic;
     font-weight: normal;
-    src: url('../font/lmmono-italic.woff');
+    src: url('../font/TeX-Gyre-Pagella/texgyrepagella-italic.woff');
 }
 
 @font-face {
     font-display: swap;
-    font-family: 'Latin Modern Mono';
+    font-family: 'TeX Gyre Pagella';
     font-style: normal;
     font-weight: normal;
-    src: url('../font/lmmono-normal.woff');
+    src: url('../font/TeX-Gyre-Pagella/texgyrepagella-regular.woff');
 }
 
 @font-face {
     font-display: swap;
-    font-family: 'Latin Modern Roman';
+    font-family: 'TeX Gyre Pagella';
     font-style: normal;
     font-weight: bold;
-    src: url('../font/lmroman-bold.woff');
+    src: url('../font/TeX-Gyre-Pagella/texgyrepagella-bold.woff');
 }
 
 @font-face {
     font-display: swap;
-    font-family: 'Latin Modern Roman';
+    font-family: 'TeX Gyre Pagella';
     font-style: italic;
     font-weight: bold;
-    src: url('../font/lmroman-bolditalic.woff');
+    src: url('../font/TeX-Gyre-Pagella/texgyrepagella-bolditalic.woff');
 }
 
 @font-face {
     font-display: swap;
-    font-family: 'Latin Modern Roman';
+    font-family: 'TeX Gyre Pagella';
     font-style: italic;
     font-weight: normal;
-    src: url('../font/lmroman-italic.woff');
+    src: url('../font/TeX-Gyre-Pagella/texgyrepagella-italic.woff');
 }
 
 @font-face {
     font-display: swap;
-    font-family: 'Latin Modern Roman';
+    font-family: 'TeX Gyre Pagella';
     font-style: normal;
     font-weight: normal;
-    src: url('../font/lmroman-normal.woff');
+    src: url('../font/TeX-Gyre-Pagella/texgyrepagella-regular.woff');
 }
 
 /* global */
@@ -87,10 +87,10 @@ time {
     background-color: #FAFAFA;
     display: flex;
     flex-direction: column;
-    font-family: 'Latin Modern Roman', 'Times New Roman', serif;
+    font-family: 'TeX Gyre Pagella', 'Times New Roman', serif;
     min-height: 100vh;
+    overflow-wrap: break-word;
     padding: 1rem;
-    word-break: break-word;
 }
 
 .link {
@@ -134,7 +134,7 @@ time {
 
 @media screen and (min-width: 768px) {
     #header > h1 {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 }
 
@@ -143,7 +143,7 @@ time {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 768px;
+    max-width: 650px;
     width: 100%;
 }
 
@@ -174,4 +174,51 @@ time {
 
 #footer > .footnote {
     text-align: center;
+}
+
+/* flexbox */
+
+.flexing {
+	display: flex;
+	flex-direction: row;
+	gap: 5%;
+	justify-content: center;
+}
+
+.responsive {
+	max-height: 100%;
+	height: auto;
+	justify-content: center;
+}
+
+.photoflex {
+	display: flex;
+	flex-direction: column;
+	gap: 5%;
+}
+
+.responsivephoto {
+	margin: auto;
+	max-width: 80%;
+	height: auto;
+}
+
+@media screen and (max-width:768px) {
+	.flexing {
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+	}
+
+	.responsive {
+		margin: auto;
+		max-width: 40%;
+		height: auto;
+	}
+
+	.responsivephoto {
+		margin: auto;
+		max-width: 100%;
+		height: auto;
+	}
 }
